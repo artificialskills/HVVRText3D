@@ -1,0 +1,9 @@
+[submodule "projects/hvvr_samples/textviewer/thorax_bridge"]
+	path = projects/hvvr_samples/textviewer/thorax_bridge
+	url = https://github.com/artificialskills/thorax_truetype.git
+[submodule "projects/hvvr_samples/textviewer/thorax_truetype"]
+	path = projects/hvvr_samples/textviewer/thorax_truetype
+	url = https://github.com/artificialskills/thorax_truetype.git
+[submodule "libraries/hvvr/shared/thorax"]
+	path = libraries/hvvr/shared/thorax
+	url = https://github.com/artificialskills/thorax_truetype.git

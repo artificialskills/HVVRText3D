@@ -1,0 +1,1899 @@
+diff -r thorax/.clang-format thorax_truetype-master/.clang-format
+1,62c1,62
+< ---
+< Language:        Cpp
+< # BasedOnStyle:  Oculus Research
+< AccessModifierOffset: -2
+< ConstructorInitializerIndentWidth: 4
+< AlignEscapedNewlinesLeft: false
+< AlignTrailingComments: true
+< AllowAllParametersOfDeclarationOnNextLine: true
+< AllowShortBlocksOnASingleLine: false
+< AllowShortCaseLabelsOnASingleLine: false
+< AllowShortIfStatementsOnASingleLine: true
+< AllowShortLoopsOnASingleLine: true
+< AllowShortFunctionsOnASingleLine: All
+< AlwaysBreakAfterDefinitionReturnType: false
+< AlwaysBreakTemplateDeclarations: false
+< AlwaysBreakBeforeMultilineStrings: false
+< BreakBeforeBinaryOperators: None
+< BreakBeforeTernaryOperators: true
+< BreakConstructorInitializersBeforeComma: false
+< BinPackParameters: false
+< BinPackArguments: true
+< ColumnLimit:     120
+< ConstructorInitializerAllOnOneLineOrOnePerLine: true
+< DerivePointerAlignment: false
+< ExperimentalAutoDetectBinPacking: false
+< IndentCaseLabels: true
+< IndentWrappedFunctionNames: false
+< IndentFunctionDeclarationAfterType: false
+< MaxEmptyLinesToKeep: 1
+< KeepEmptyLinesAtTheStartOfBlocks: false
+< NamespaceIndentation: None
+< ObjCSpaceAfterProperty: false
+< ObjCSpaceBeforeProtocolList: false
+< PenaltyBreakBeforeFirstCallParameter: 1
+< PenaltyBreakComment: 300
+< PenaltyBreakString: 1000	
+< PenaltyBreakFirstLessLess: 120
+< PenaltyExcessCharacter: 1000000
+< PenaltyReturnTypeOnItsOwnLine: 200
+< PointerAlignment: Left
+< SpacesBeforeTrailingComments: 1
+< Cpp11BracedListStyle: true
+< Standard:        Cpp11
+< IndentWidth:     4
+< TabWidth:        4
+< UseTab:          ForIndentation
+< BreakBeforeBraces: Attach
+< SpacesInParentheses: false
+< SpacesInSquareBrackets: false
+< SpacesInAngles:  false
+< SpaceInEmptyParentheses: false
+< SpacesInCStyleCastParentheses: false
+< SpaceAfterCStyleCast: false
+< SpacesInContainerLiterals: true
+< SpaceBeforeAssignmentOperators: true
+< ContinuationIndentWidth: 4
+< CommentPragmas:  '^ IWYU pragma:'
+< ForEachMacros:   [ foreach, Q_FOREACH, BOOST_FOREACH ]
+< SpaceBeforeParens: ControlStatements
+< DisableFormat:   false
+< ...
+< 
+---
+> ---
+> Language:        Cpp
+> # BasedOnStyle:  Oculus Research
+> AccessModifierOffset: -2
+> ConstructorInitializerIndentWidth: 4
+> AlignEscapedNewlinesLeft: false
+> AlignTrailingComments: true
+> AllowAllParametersOfDeclarationOnNextLine: true
+> AllowShortBlocksOnASingleLine: false
+> AllowShortCaseLabelsOnASingleLine: false
+> AllowShortIfStatementsOnASingleLine: true
+> AllowShortLoopsOnASingleLine: true
+> AllowShortFunctionsOnASingleLine: All
+> AlwaysBreakAfterDefinitionReturnType: false
+> AlwaysBreakTemplateDeclarations: false
+> AlwaysBreakBeforeMultilineStrings: false
+> BreakBeforeBinaryOperators: None
+> BreakBeforeTernaryOperators: true
+> BreakConstructorInitializersBeforeComma: false
+> BinPackParameters: false
+> BinPackArguments: true
+> ColumnLimit:     120
+> ConstructorInitializerAllOnOneLineOrOnePerLine: true
+> DerivePointerAlignment: false
+> ExperimentalAutoDetectBinPacking: false
+> IndentCaseLabels: true
+> IndentWrappedFunctionNames: false
+> IndentFunctionDeclarationAfterType: false
+> MaxEmptyLinesToKeep: 1
+> KeepEmptyLinesAtTheStartOfBlocks: false
+> NamespaceIndentation: None
+> ObjCSpaceAfterProperty: false
+> ObjCSpaceBeforeProtocolList: false
+> PenaltyBreakBeforeFirstCallParameter: 1
+> PenaltyBreakComment: 300
+> PenaltyBreakString: 1000	
+> PenaltyBreakFirstLessLess: 120
+> PenaltyExcessCharacter: 1000000
+> PenaltyReturnTypeOnItsOwnLine: 200
+> PointerAlignment: Left
+> SpacesBeforeTrailingComments: 1
+> Cpp11BracedListStyle: true
+> Standard:        Cpp11
+> IndentWidth:     4
+> TabWidth:        4
+> UseTab:          ForIndentation
+> BreakBeforeBraces: Attach
+> SpacesInParentheses: false
+> SpacesInSquareBrackets: false
+> SpacesInAngles:  false
+> SpaceInEmptyParentheses: false
+> SpacesInCStyleCastParentheses: false
+> SpaceAfterCStyleCast: false
+> SpacesInContainerLiterals: true
+> SpaceBeforeAssignmentOperators: true
+> ContinuationIndentWidth: 4
+> CommentPragmas:  '^ IWYU pragma:'
+> ForEachMacros:   [ foreach, Q_FOREACH, BOOST_FOREACH ]
+> SpaceBeforeParens: ControlStatements
+> DisableFormat:   false
+> ...
+> 
+Only in thorax: gpu_grid_sampler.h
+Only in thorax: grid_types.h
+Only in thorax: grids.h
+diff -r thorax/LICENSE thorax_truetype-master/LICENSE
+1,202c1,202
+<                                  Apache License
+<                            Version 2.0, January 2004
+<                         http://www.apache.org/licenses/
+< 
+<    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+< 
+<    1. Definitions.
+< 
+<       "License" shall mean the terms and conditions for use, reproduction,
+<       and distribution as defined by Sections 1 through 9 of this document.
+< 
+<       "Licensor" shall mean the copyright owner or entity authorized by
+<       the copyright owner that is granting the License.
+< 
+<       "Legal Entity" shall mean the union of the acting entity and all
+<       other entities that control, are controlled by, or are under common
+<       control with that entity. For the purposes of this definition,
+<       "control" means (i) the power, direct or indirect, to cause the
+<       direction or management of such entity, whether by contract or
+<       otherwise, or (ii) ownership of fifty percent (50%) or more of the
+<       outstanding shares, or (iii) beneficial ownership of such entity.
+< 
+<       "You" (or "Your") shall mean an individual or Legal Entity
+<       exercising permissions granted by this License.
+< 
+<       "Source" form shall mean the preferred form for making modifications,
+<       including but not limited to software source code, documentation
+<       source, and configuration files.
+< 
+<       "Object" form shall mean any form resulting from mechanical
+<       transformation or translation of a Source form, including but
+<       not limited to compiled object code, generated documentation,
+<       and conversions to other media types.
+< 
+<       "Work" shall mean the work of authorship, whether in Source or
+<       Object form, made available under the License, as indicated by a
+<       copyright notice that is included in or attached to the work
+<       (an example is provided in the Appendix below).
+< 
+<       "Derivative Works" shall mean any work, whether in Source or Object
+<       form, that is based on (or derived from) the Work and for which the
+<       editorial revisions, annotations, elaborations, or other modifications
+<       represent, as a whole, an original work of authorship. For the purposes
+<       of this License, Derivative Works shall not include works that remain
+<       separable from, or merely link (or bind by name) to the interfaces of,
+<       the Work and Derivative Works thereof.
+< 
+<       "Contribution" shall mean any work of authorship, including
+<       the original version of the Work and any modifications or additions
+<       to that Work or Derivative Works thereof, that is intentionally
+<       submitted to Licensor for inclusion in the Work by the copyright owner
+<       or by an individual or Legal Entity authorized to submit on behalf of
+<       the copyright owner. For the purposes of this definition, "submitted"
+<       means any form of electronic, verbal, or written communication sent
+<       to the Licensor or its representatives, including but not limited to
+<       communication on electronic mailing lists, source code control systems,
+<       and issue tracking systems that are managed by, or on behalf of, the
+<       Licensor for the purpose of discussing and improving the Work, but
+<       excluding communication that is conspicuously marked or otherwise
+<       designated in writing by the copyright owner as "Not a Contribution."
+< 
+<       "Contributor" shall mean Licensor and any individual or Legal Entity
+<       on behalf of whom a Contribution has been received by Licensor and
+<       subsequently incorporated within the Work.
+< 
+<    2. Grant of Copyright License. Subject to the terms and conditions of
+<       this License, each Contributor hereby grants to You a perpetual,
+<       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+<       copyright license to reproduce, prepare Derivative Works of,
+<       publicly display, publicly perform, sublicense, and distribute the
+<       Work and such Derivative Works in Source or Object form.
+< 
+<    3. Grant of Patent License. Subject to the terms and conditions of
+<       this License, each Contributor hereby grants to You a perpetual,
+<       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+<       (except as stated in this section) patent license to make, have made,
+<       use, offer to sell, sell, import, and otherwise transfer the Work,
+<       where such license applies only to those patent claims licensable
+<       by such Contributor that are necessarily infringed by their
+<       Contribution(s) alone or by combination of their Contribution(s)
+<       with the Work to which such Contribution(s) was submitted. If You
+<       institute patent litigation against any entity (including a
+<       cross-claim or counterclaim in a lawsuit) alleging that the Work
+<       or a Contribution incorporated within the Work constitutes direct
+<       or contributory patent infringement, then any patent licenses
+<       granted to You under this License for that Work shall terminate
+<       as of the date such litigation is filed.
+< 
+<    4. Redistribution. You may reproduce and distribute copies of the
+<       Work or Derivative Works thereof in any medium, with or without
+<       modifications, and in Source or Object form, provided that You
+<       meet the following conditions:
+< 
+<       (a) You must give any other recipients of the Work or
+<           Derivative Works a copy of this License; and
+< 
+<       (b) You must cause any modified files to carry prominent notices
+<           stating that You changed the files; and
+< 
+<       (c) You must retain, in the Source form of any Derivative Works
+<           that You distribute, all copyright, patent, trademark, and
+<           attribution notices from the Source form of the Work,
+<           excluding those notices that do not pertain to any part of
+<           the Derivative Works; and
+< 
+<       (d) If the Work includes a "NOTICE" text file as part of its
+<           distribution, then any Derivative Works that You distribute must
+<           include a readable copy of the attribution notices contained
+<           within such NOTICE file, excluding those notices that do not
+<           pertain to any part of the Derivative Works, in at least one
+<           of the following places: within a NOTICE text file distributed
+<           as part of the Derivative Works; within the Source form or
+<           documentation, if provided along with the Derivative Works; or,
+<           within a display generated by the Derivative Works, if and
+<           wherever such third-party notices normally appear. The contents
+<           of the NOTICE file are for informational purposes only and
+<           do not modify the License. You may add Your own attribution
+<           notices within Derivative Works that You distribute, alongside
+<           or as an addendum to the NOTICE text from the Work, provided
+<           that such additional attribution notices cannot be construed
+<           as modifying the License.
+< 
+<       You may add Your own copyright statement to Your modifications and
+<       may provide additional or different license terms and conditions
+<       for use, reproduction, or distribution of Your modifications, or
+<       for any such Derivative Works as a whole, provided Your use,
+<       reproduction, and distribution of the Work otherwise complies with
+<       the conditions stated in this License.
+< 
+<    5. Submission of Contributions. Unless You explicitly state otherwise,
+<       any Contribution intentionally submitted for inclusion in the Work
+<       by You to the Licensor shall be under the terms and conditions of
+<       this License, without any additional terms or conditions.
+<       Notwithstanding the above, nothing herein shall supersede or modify
+<       the terms of any separate license agreement you may have executed
+<       with Licensor regarding such Contributions.
+< 
+<    6. Trademarks. This License does not grant permission to use the trade
+<       names, trademarks, service marks, or product names of the Licensor,
+<       except as required for reasonable and customary use in describing the
+<       origin of the Work and reproducing the content of the NOTICE file.
+< 
+<    7. Disclaimer of Warranty. Unless required by applicable law or
+<       agreed to in writing, Licensor provides the Work (and each
+<       Contributor provides its Contributions) on an "AS IS" BASIS,
+<       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+<       implied, including, without limitation, any warranties or conditions
+<       of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+<       PARTICULAR PURPOSE. You are solely responsible for determining the
+<       appropriateness of using or redistributing the Work and assume any
+<       risks associated with Your exercise of permissions under this License.
+< 
+<    8. Limitation of Liability. In no event and under no legal theory,
+<       whether in tort (including negligence), contract, or otherwise,
+<       unless required by applicable law (such as deliberate and grossly
+<       negligent acts) or agreed to in writing, shall any Contributor be
+<       liable to You for damages, including any direct, indirect, special,
+<       incidental, or consequential damages of any character arising as a
+<       result of this License or out of the use or inability to use the
+<       Work (including but not limited to damages for loss of goodwill,
+<       work stoppage, computer failure or malfunction, or any and all
+<       other commercial damages or losses), even if such Contributor
+<       has been advised of the possibility of such damages.
+< 
+<    9. Accepting Warranty or Additional Liability. While redistributing
+<       the Work or Derivative Works thereof, You may choose to offer,
+<       and charge a fee for, acceptance of support, warranty, indemnity,
+<       or other liability obligations and/or rights consistent with this
+<       License. However, in accepting such obligations, You may act only
+<       on Your own behalf and on Your sole responsibility, not on behalf
+<       of any other Contributor, and only if You agree to indemnify,
+<       defend, and hold each Contributor harmless for any liability
+<       incurred by, or claims asserted against, such Contributor by reason
+<       of your accepting any such warranty or additional liability.
+< 
+<    END OF TERMS AND CONDITIONS
+< 
+<    APPENDIX: How to apply the Apache License to your work.
+< 
+<       To apply the Apache License to your work, attach the following
+<       boilerplate notice, with the fields enclosed by brackets "{}"
+<       replaced with your own identifying information. (Don't include
+<       the brackets!)  The text should be enclosed in the appropriate
+<       comment syntax for the file format. We also recommend that a
+<       file or class name and description of purpose be included on the
+<       same "printed page" as the copyright notice for easier
+<       identification within third-party archives.
+< 
+<    Copyright {yyyy} {name of copyright owner}
+< 
+<    Licensed under the Apache License, Version 2.0 (the "License");
+<    you may not use this file except in compliance with the License.
+<    You may obtain a copy of the License at
+< 
+<        http://www.apache.org/licenses/LICENSE-2.0
+< 
+<    Unless required by applicable law or agreed to in writing, software
+<    distributed under the License is distributed on an "AS IS" BASIS,
+<    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+<    See the License for the specific language governing permissions and
+<    limitations under the License.
+< 
+---
+>                                  Apache License
+>                            Version 2.0, January 2004
+>                         http://www.apache.org/licenses/
+> 
+>    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+> 
+>    1. Definitions.
+> 
+>       "License" shall mean the terms and conditions for use, reproduction,
+>       and distribution as defined by Sections 1 through 9 of this document.
+> 
+>       "Licensor" shall mean the copyright owner or entity authorized by
+>       the copyright owner that is granting the License.
+> 
+>       "Legal Entity" shall mean the union of the acting entity and all
+>       other entities that control, are controlled by, or are under common
+>       control with that entity. For the purposes of this definition,
+>       "control" means (i) the power, direct or indirect, to cause the
+>       direction or management of such entity, whether by contract or
+>       otherwise, or (ii) ownership of fifty percent (50%) or more of the
+>       outstanding shares, or (iii) beneficial ownership of such entity.
+> 
+>       "You" (or "Your") shall mean an individual or Legal Entity
+>       exercising permissions granted by this License.
+> 
+>       "Source" form shall mean the preferred form for making modifications,
+>       including but not limited to software source code, documentation
+>       source, and configuration files.
+> 
+>       "Object" form shall mean any form resulting from mechanical
+>       transformation or translation of a Source form, including but
+>       not limited to compiled object code, generated documentation,
+>       and conversions to other media types.
+> 
+>       "Work" shall mean the work of authorship, whether in Source or
+>       Object form, made available under the License, as indicated by a
+>       copyright notice that is included in or attached to the work
+>       (an example is provided in the Appendix below).
+> 
+>       "Derivative Works" shall mean any work, whether in Source or Object
+>       form, that is based on (or derived from) the Work and for which the
+>       editorial revisions, annotations, elaborations, or other modifications
+>       represent, as a whole, an original work of authorship. For the purposes
+>       of this License, Derivative Works shall not include works that remain
+>       separable from, or merely link (or bind by name) to the interfaces of,
+>       the Work and Derivative Works thereof.
+> 
+>       "Contribution" shall mean any work of authorship, including
+>       the original version of the Work and any modifications or additions
+>       to that Work or Derivative Works thereof, that is intentionally
+>       submitted to Licensor for inclusion in the Work by the copyright owner
+>       or by an individual or Legal Entity authorized to submit on behalf of
+>       the copyright owner. For the purposes of this definition, "submitted"
+>       means any form of electronic, verbal, or written communication sent
+>       to the Licensor or its representatives, including but not limited to
+>       communication on electronic mailing lists, source code control systems,
+>       and issue tracking systems that are managed by, or on behalf of, the
+>       Licensor for the purpose of discussing and improving the Work, but
+>       excluding communication that is conspicuously marked or otherwise
+>       designated in writing by the copyright owner as "Not a Contribution."
+> 
+>       "Contributor" shall mean Licensor and any individual or Legal Entity
+>       on behalf of whom a Contribution has been received by Licensor and
+>       subsequently incorporated within the Work.
+> 
+>    2. Grant of Copyright License. Subject to the terms and conditions of
+>       this License, each Contributor hereby grants to You a perpetual,
+>       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+>       copyright license to reproduce, prepare Derivative Works of,
+>       publicly display, publicly perform, sublicense, and distribute the
+>       Work and such Derivative Works in Source or Object form.
+> 
+>    3. Grant of Patent License. Subject to the terms and conditions of
+>       this License, each Contributor hereby grants to You a perpetual,
+>       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+>       (except as stated in this section) patent license to make, have made,
+>       use, offer to sell, sell, import, and otherwise transfer the Work,
+>       where such license applies only to those patent claims licensable
+>       by such Contributor that are necessarily infringed by their
+>       Contribution(s) alone or by combination of their Contribution(s)
+>       with the Work to which such Contribution(s) was submitted. If You
+>       institute patent litigation against any entity (including a
+>       cross-claim or counterclaim in a lawsuit) alleging that the Work
+>       or a Contribution incorporated within the Work constitutes direct
+>       or contributory patent infringement, then any patent licenses
+>       granted to You under this License for that Work shall terminate
+>       as of the date such litigation is filed.
+> 
+>    4. Redistribution. You may reproduce and distribute copies of the
+>       Work or Derivative Works thereof in any medium, with or without
+>       modifications, and in Source or Object form, provided that You
+>       meet the following conditions:
+> 
+>       (a) You must give any other recipients of the Work or
+>           Derivative Works a copy of this License; and
+> 
+>       (b) You must cause any modified files to carry prominent notices
+>           stating that You changed the files; and
+> 
+>       (c) You must retain, in the Source form of any Derivative Works
+>           that You distribute, all copyright, patent, trademark, and
+>           attribution notices from the Source form of the Work,
+>           excluding those notices that do not pertain to any part of
+>           the Derivative Works; and
+> 
+>       (d) If the Work includes a "NOTICE" text file as part of its
+>           distribution, then any Derivative Works that You distribute must
+>           include a readable copy of the attribution notices contained
+>           within such NOTICE file, excluding those notices that do not
+>           pertain to any part of the Derivative Works, in at least one
+>           of the following places: within a NOTICE text file distributed
+>           as part of the Derivative Works; within the Source form or
+>           documentation, if provided along with the Derivative Works; or,
+>           within a display generated by the Derivative Works, if and
+>           wherever such third-party notices normally appear. The contents
+>           of the NOTICE file are for informational purposes only and
+>           do not modify the License. You may add Your own attribution
+>           notices within Derivative Works that You distribute, alongside
+>           or as an addendum to the NOTICE text from the Work, provided
+>           that such additional attribution notices cannot be construed
+>           as modifying the License.
+> 
+>       You may add Your own copyright statement to Your modifications and
+>       may provide additional or different license terms and conditions
+>       for use, reproduction, or distribution of Your modifications, or
+>       for any such Derivative Works as a whole, provided Your use,
+>       reproduction, and distribution of the Work otherwise complies with
+>       the conditions stated in this License.
+> 
+>    5. Submission of Contributions. Unless You explicitly state otherwise,
+>       any Contribution intentionally submitted for inclusion in the Work
+>       by You to the Licensor shall be under the terms and conditions of
+>       this License, without any additional terms or conditions.
+>       Notwithstanding the above, nothing herein shall supersede or modify
+>       the terms of any separate license agreement you may have executed
+>       with Licensor regarding such Contributions.
+> 
+>    6. Trademarks. This License does not grant permission to use the trade
+>       names, trademarks, service marks, or product names of the Licensor,
+>       except as required for reasonable and customary use in describing the
+>       origin of the Work and reproducing the content of the NOTICE file.
+> 
+>    7. Disclaimer of Warranty. Unless required by applicable law or
+>       agreed to in writing, Licensor provides the Work (and each
+>       Contributor provides its Contributions) on an "AS IS" BASIS,
+>       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+>       implied, including, without limitation, any warranties or conditions
+>       of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+>       PARTICULAR PURPOSE. You are solely responsible for determining the
+>       appropriateness of using or redistributing the Work and assume any
+>       risks associated with Your exercise of permissions under this License.
+> 
+>    8. Limitation of Liability. In no event and under no legal theory,
+>       whether in tort (including negligence), contract, or otherwise,
+>       unless required by applicable law (such as deliberate and grossly
+>       negligent acts) or agreed to in writing, shall any Contributor be
+>       liable to You for damages, including any direct, indirect, special,
+>       incidental, or consequential damages of any character arising as a
+>       result of this License or out of the use or inability to use the
+>       Work (including but not limited to damages for loss of goodwill,
+>       work stoppage, computer failure or malfunction, or any and all
+>       other commercial damages or losses), even if such Contributor
+>       has been advised of the possibility of such damages.
+> 
+>    9. Accepting Warranty or Additional Liability. While redistributing
+>       the Work or Derivative Works thereof, You may choose to offer,
+>       and charge a fee for, acceptance of support, warranty, indemnity,
+>       or other liability obligations and/or rights consistent with this
+>       License. However, in accepting such obligations, You may act only
+>       on Your own behalf and on Your sole responsibility, not on behalf
+>       of any other Contributor, and only if You agree to indemnify,
+>       defend, and hold each Contributor harmless for any liability
+>       incurred by, or claims asserted against, such Contributor by reason
+>       of your accepting any such warranty or additional liability.
+> 
+>    END OF TERMS AND CONDITIONS
+> 
+>    APPENDIX: How to apply the Apache License to your work.
+> 
+>       To apply the Apache License to your work, attach the following
+>       boilerplate notice, with the fields enclosed by brackets "{}"
+>       replaced with your own identifying information. (Don't include
+>       the brackets!)  The text should be enclosed in the appropriate
+>       comment syntax for the file format. We also recommend that a
+>       file or class name and description of purpose be included on the
+>       same "printed page" as the copyright notice for easier
+>       identification within third-party archives.
+> 
+>    Copyright {yyyy} {name of copyright owner}
+> 
+>    Licensed under the Apache License, Version 2.0 (the "License");
+>    you may not use this file except in compliance with the License.
+>    You may obtain a copy of the License at
+> 
+>        http://www.apache.org/licenses/LICENSE-2.0
+> 
+>    Unless required by applicable law or agreed to in writing, software
+>    distributed under the License is distributed on an "AS IS" BASIS,
+>    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+>    See the License for the specific language governing permissions and
+>    limitations under the License.
+> 
+diff -r thorax/README thorax_truetype-master/README
+1,22c1,22
+< Thorax Truetype is a library for loading and rendering TrueType fonts.  This
+< project grew out of a pedagogical exercise to have an easy to understand
+< TrueType loader.  My desire to do so came from stb_truetype being difficult
+< to understand due to a lack of C++ features or type punning (the address
+< computations required to index into the truetype tables are pretty
+< incomprehensible as inline C code) and the size of the opentype loader.
+< 
+< The loader consists of two files:
+<   thorax_truetype.h
+<   thorax_truetype.cpp
+< 
+< In addition to the font loader, this project contains a font rasterizer in the
+< renderer folder.  The rasterizer uses a novel coverage algorithm and is capable
+< of generated nicely anti-aliased renderings.
+< 
+< The files in the renderer:
+<   build.h         : interface for managing text scenes
+<   bvh.cpp         : implementation of bounding volume hierarchy builders
+<   drawcontext.h   : context interface for drawing text to a bitmap
+<   drawcontext.cpp : context implementation for drawing text to a bitmap
+<   types.h         : a variety of helper datatypes
+< 
+---
+> Thorax Truetype is a library for loading and rendering TrueType fonts.  This
+> project grew out of a pedagogical exercise to have an easy to understand
+> TrueType loader.  My desire to do so came from stb_truetype being difficult
+> to understand due to a lack of C++ features or type punning (the address
+> computations required to index into the truetype tables are pretty
+> incomprehensible as inline C code) and the size of the opentype loader.
+> 
+> The loader consists of two files:
+>   thorax_truetype.h
+>   thorax_truetype.cpp
+> 
+> In addition to the font loader, this project contains a font rasterizer in the
+> renderer folder.  The rasterizer uses a novel coverage algorithm and is capable
+> of generated nicely anti-aliased renderings.
+> 
+> The files in the renderer:
+>   build.h         : interface for managing text scenes
+>   bvh.cpp         : implementation of bounding volume hierarchy builders
+>   drawcontext.h   : context interface for drawing text to a bitmap
+>   drawcontext.cpp : context implementation for drawing text to a bitmap
+>   types.h         : a variety of helper datatypes
+> 
+diff -r thorax/renderer/build.h thorax_truetype-master/renderer/build.h
+18,19d17
+< // This file was modified from it's original form by Apollo I. Ellis
+< 
+23,62c21,58
+< namespace thorax_ai
+< {
+< 	struct BuilderBox {
+< 		Box box;
+< 		unsigned childOffset;
+< 		unsigned index;
+< 		unsigned size;
+< 		unsigned PADDING;
+< 	};
+< 
+< 	template <size_t SIZE> struct BuilderBoxN {
+< 		bool IsLeaf(size_t i) const { return data[i].childOffset == 0; }
+< 		unsigned Index(size_t i) const { return data[i].index; }
+< 		unsigned Size(size_t i) const { return data[i].size; }
+< 		const BuilderBoxN* Child(size_t i) const { return this + data[i].childOffset; }
+< 		void SetHead(unsigned head) { data[0].PADDING = head; }
+< 		void SetTail(unsigned tail) { data[1].PADDING = tail; }
+< 		void SetPerm(unsigned perm) { data[2].PADDING = perm; }
+< 		void SetFlip(unsigned flip) { data[3].PADDING = flip; }
+< 		unsigned GetHead() const { return data[0].PADDING; }
+< 		unsigned GetTail() const { return data[1].PADDING; }
+< 		unsigned GetPerm() const { return data[2].PADDING; }
+< 		unsigned GetFlip() const { return data[3].PADDING; }
+< 		BuilderBoxN* Child(size_t i) { return this + data[i].childOffset; }
+< 		BuilderBox data[SIZE];
+< 	};
+< 
+< 	typedef BuilderBoxN<2> BuilderBox2;
+< 	typedef BuilderBoxN<4> BuilderBox4;
+< 
+< 	struct BuilderMesh {
+< 		BuilderMesh() = default;
+< 		BuilderMesh(const Shape* shapes, size_t numShapes);
+< 		size_t TranscribeBVH(Box4Node* nodes, Shape* shapes, unsigned firstShape) const;
+< 
+< 	private:
+< 		Array<BuilderBox4> node4s;
+< 		const Shape* source;
+< 		Array<unsigned> indices;
+< 	};
+---
+> struct BuilderBox {
+>     Box box;
+>     unsigned childOffset;
+>     unsigned index;
+>     unsigned size;
+>     unsigned PADDING;
+> };
+> 
+> template <size_t SIZE> struct BuilderBoxN {
+>     bool IsLeaf(size_t i) const { return data[i].childOffset == 0; }
+>     unsigned Index(size_t i) const { return data[i].index; }
+>     unsigned Size(size_t i) const { return data[i].size; }
+>     const BuilderBoxN* Child(size_t i) const { return this + data[i].childOffset; }
+>     void SetHead(unsigned head) { data[0].PADDING = head; }
+>     void SetTail(unsigned tail) { data[1].PADDING = tail; }
+>     void SetPerm(unsigned perm) { data[2].PADDING = perm; }
+>     void SetFlip(unsigned flip) { data[3].PADDING = flip; }
+>     unsigned GetHead() const { return data[0].PADDING; }
+>     unsigned GetTail() const { return data[1].PADDING; }
+>     unsigned GetPerm() const { return data[2].PADDING; }
+>     unsigned GetFlip() const { return data[3].PADDING; }
+>     BuilderBoxN* Child(size_t i) { return this + data[i].childOffset; }
+>     BuilderBox data[SIZE];
+> };
+> 
+> typedef BuilderBoxN<2> BuilderBox2;
+> typedef BuilderBoxN<4> BuilderBox4;
+> 
+> struct BuilderMesh {
+>     BuilderMesh() = default;
+>     BuilderMesh(const Shape* shapes, size_t numShapes);
+>     size_t TranscribeBVH(Box4Node* nodes, Shape* shapes, unsigned firstShape) const;
+> 
+> private:
+>     Array<BuilderBox4> node4s;
+>     const Shape* source;
+>     Array<unsigned> indices;
+> };
+64,65c60
+< 	//size_t QuickBuild(Box4Node* nodes, const Mesh* meshes, const Box4NodeRef* input, size_t numRefs);
+< }
+\ No newline at end of file
+---
+> size_t QuickBuild(Box4Node* nodes, const Mesh* meshes, const Box4NodeRef* input, size_t numRefs);
+diff -r thorax/renderer/bvh.cpp thorax_truetype-master/renderer/bvh.cpp
+18,19d17
+< // This file was modified from it's original form by Apollo I. Ellis
+< 
+26,27d23
+< 
+< using namespace thorax_ai;
+diff -r thorax/renderer/drawcontext.cpp thorax_truetype-master/renderer/drawcontext.cpp
+18,19d17
+< // This file was modified from it's original form by Apollo I. Ellis
+< 
+30,31d27
+< using namespace thorax_ai;
+< 
+394c390
+< 	auto p = (DrawContextImpl*)_aligned_malloc(sizeof(DrawContextImpl), __alignof(DrawContextImpl));
+---
+>     auto p = (DrawContextImpl*)_aligned_malloc(sizeof(DrawContextImpl), __alignof(DrawContextImpl));
+499a496,522
+> struct QuadraticEqn8 {
+>     QuadraticEqn8(float8 a, float8 b, float8 c, float8 i_a, float8 i_b, const Range8& solve)
+>         : a(a), b(b), c(c), i_a(i_a), i_b(i_b), solve(solve) {}
+>     DEBUG_NOINLINE QuadraticEqn8(float A, float B, float C) {
+>         a = float8(A);
+>         b = float8(B);
+>         c = float8(C);
+>         // TODO: fix the case where A == 0
+>         i_a = float8(-1.0f / A);
+>         // TODO: write comment about the B == 0 branch.
+>         i_b = B == 0 ? float8::SignMask() : float8(0.5f * B) * i_a;
+>         auto i_c = madd(i_b, i_b, i_a * float8(C));
+>         solve = Range8::Make(i_c, i_c - i_a);
+>     }
+>     float8 operator()(float8 t) const { return madd(madd(a, t, b), t, c); }
+>     Range8 operator()(const Range8& t) const { return Range8(operator()(t.lower), operator()(t.upper)); }
+>     float8 SolveApex() const { return i_b; }
+>     Range8 SolveDelta() const {
+>         return Range8(sqrt(max(float8::Zero(), solve.lower)), sqrt(max(float8::Zero(), solve.upper)));
+>     }
+>     __forceinline QuadraticEqn8 Apply(float8 x) const {
+>         return QuadraticEqn8(a, b, c + x, i_a, i_b, Range8(madd(i_a, x, solve.lower), madd(i_a, x, solve.upper)));
+>     }
+>     float8 a, b, c;
+>     float8 i_a, i_b;
+>     Range8 solve;
+> };
+508a532,540
+> struct CurveEqns8 {
+>     explicit CurveEqns8(const Shape& a)
+>         : x0(-a.p0v1p2v3[6], a.p0v1p2v3[0] + a.p0v1p2v3[6]),
+>           y0(-a.p0v1p2v3[7], a.p0v1p2v3[1] + a.p0v1p2v3[7]),
+>           x1(a.p0v1p2v3[6] - 2 * a.p0v1p2v3[2], 2 * a.p0v1p2v3[2], a.p0v1p2v3[0]),
+>           y1(a.p0v1p2v3[7] - 2 * a.p0v1p2v3[3], 2 * a.p0v1p2v3[3], a.p0v1p2v3[1]) {}
+>     LinearEqn8 x0, y0;
+>     QuadraticEqn8 x1, y1;
+> };
+612,658d643
+< 
+< struct QuadraticEqn8 {
+<     QuadraticEqn8(float8 a, float8 b, float8 c, float8 i_a, float8 i_b, const Range8& solve)
+<         : a(a), b(b), c(c), i_a(i_a), i_b(i_b), solve(solve) {}
+<     DEBUG_NOINLINE QuadraticEqn8(float A, float B, float C) {
+< 		//(y2 - y0) - 2 * (y1 - y0)
+< 		a = float8(A);
+< 		//2 * (y1 - y0)
+<         b = float8(B);
+< 		//y0
+<         c = float8(C);
+<         // TODO: fix the case where A == 0
+<         i_a = float8(-1.0f / A);
+<         // TODO: write comment about the B == 0 branch.
+<         i_b = B == 0 ? float8::SignMask() : float8(0.5f * B) * i_a;
+<         auto i_c = madd(i_b, i_b, i_a * float8(C));
+<         solve = Range8::Make(i_c, i_c - i_a);
+<     }
+<     float8 operator()(float8 t) const { return madd(madd(a, t, b), t, c); }
+<     Range8 operator()(const Range8& t) const { return Range8(operator()(t.lower), operator()(t.upper)); }
+<     float8 SolveApex() const { return i_b; }
+<     Range8 SolveDelta() const {
+<         return Range8(sqrt(max(float8::Zero(), solve.lower)), sqrt(max(float8::Zero(), solve.upper)));
+<     }
+<     __forceinline QuadraticEqn8 Apply(float8 x) const {
+<         return QuadraticEqn8(a, b, c + x, i_a, i_b, Range8(madd(i_a, x, solve.lower), madd(i_a, x, solve.upper)));
+<     }
+<     float8 a, b, c;
+<     float8 i_a, i_b;
+<     Range8 solve;
+< };
+< 
+< struct CurveEqns8 {
+<     explicit CurveEqns8(const Shape& a)
+< 		//x0 - x2, x2
+<         : x0(-a.p0v1p2v3[6], a.p0v1p2v3[0] + a.p0v1p2v3[6]),
+< 		//y0 - y2, y2
+<           y0(-a.p0v1p2v3[7], a.p0v1p2v3[1] + a.p0v1p2v3[7]),
+< 		//(x2 - x0) -  2 * (x1 - x0), 2 * (x1 - x0),  x0
+<           x1(a.p0v1p2v3[6] - 2 * a.p0v1p2v3[2], 2 * a.p0v1p2v3[2], a.p0v1p2v3[0]),
+< 		//(y2 - y0) - 2 * (y1 - y0), 2 * (y1 - y0), y0
+<           y1(a.p0v1p2v3[7] - 2 * a.p0v1p2v3[3], 2 * a.p0v1p2v3[3], a.p0v1p2v3[1]) {}
+<     LinearEqn8 x0, y0;
+<     QuadraticEqn8 x1, y1;
+< };
+< 
+< 
+660,662c645
+<     //shifted t top t bottom for the bottom line
+< 	auto y0 = eqns.y0.Apply(offset_y);
+< 	//clamp t bottom and t top to 0 1
+---
+>     auto y0 = eqns.y0.Apply(offset_y);
+664d646
+< 	//y of t bottom and y of t top
+669d650
+< 		//construct shifted t left and t right for bottom segment
+671,672d651
+< 		//clamp t left and t right to t bottom and t top
+< 		//effectively clamping t left to the square or to the point x0, and symteric ops for t right
+674d652
+< 		//y of t left and y of t right
+676d653
+< 		//y lower t + y of upper t
+678d654
+< 		//x of t min x of t max
+680,685c656
+< 		//the msub is the distance to the middle of the clipped trap in y
+< 		//so this is the rectangle of that distance times x tmin
+< 		area = xx0.lower * msub(float8(0.5f), yx0_mid, yy0.lower);
+< 		//the nmadd is also the distance to the middle of the clipped trap in y negated
+< 		//so this is the rectangle of that distance times x tmax - the above area, flipping the triangle top over makes is correct
+< 		//it's a positive area if the curve is specified properly if it's inverted then this is a negative area
+---
+>         area = xx0.lower * msub(float8(0.5f), yx0_mid, yy0.lower);
+689d659
+< 		//shift the curve
+691d660
+< 		//solve for y component of apex
+693d661
+< 		//solve for the delta from apex to the two y hit points on top and bottom of box
+695d662
+< 		//get the sign of the apex
+697,700d663
+< 		//if the apex is negative get tapex - tdelta.lower negated otherwise get tapex - tdelta.upper
+< 		//also if the apex is negative get tdelta.upper negated otherwise get tapex - tdelta.lower
+< 		//the gives us t of the hit points on the top and bottom of box
+< 		//this pushed the hit points forward for apex behind the x0 point and backward for point in front
+704d666
+< 
+708,709d669
+< 		//because we don't have local y apex but do have local x apex we need all the points here
+< 		// -b/2a + blah - 1 , -b/2a - blah - 1 ...  "" +  blah - 0 "" -  blah - 0
+713d672
+< 		//solve for areas these are only positive if the curve is specified inverted
+922,923c881,882
+<     //if (!fontInfo.maximumProfile->numGlyphs) return false;
+<    // if (!fontInfo.maximumProfile->maxComponentElements) return false;
+---
+>     if (!fontInfo.maximumProfile->numGlyphs) return false;
+>     if (!fontInfo.maximumProfile->maxComponentElements) return false;
+1044c1003
+<     Array<thorax_ai::GlyphGridBuilder*> builders(numSimpleGlyphs);
+---
+>     Array<BuilderMesh*> builders(numSimpleGlyphs);
+1047,1048c1006
+<     auto totalRefCount = 0u;
+< 	auto totalCellCount = 0u;
+---
+>     auto totalNodeCount = 0u;
+1054c1012
+<             glyphInfo.entryNode = index;
+---
+>             glyphInfo.entryNode = totalNodeCount;
+1056d1013
+< 				glyphInfo.entryNode = index;
+1059,1074c1016,1019
+< 				if (numShapes < 1) {
+< 					builders[index] = nullptr;
+< 					continue;
+< 				}
+< 				builders[index] = new thorax_ai::GlyphGridBuilder(firstShape, numShapes, (size_t)glyphInfo.firstShape);
+< 				//total size of all shape ptrs
+< 				totalRefCount += builders[index]->totalRefs;
+< 				//total cells in all grids
+< 				totalCellCount += builders[index]->cellCount;
+< 			}
+< 			else
+< 			{
+< 				builders[index] = nullptr;
+< 				//remove the indirection later, we can use this as originally used in thorax
+< 				glyphInfo.entryNode = -1;
+< 			}
+---
+>                 builders[index] = new BuilderMesh(firstShape, numShapes);
+>                 totalNodeCount += (unsigned)builders[index]->TranscribeBVH(nullptr, nullptr, 0);
+>             } else
+>                 builders[index] = nullptr;
+1087,1113c1032,1041
+< 	shapes = tempShapes;
+< 	shape_ptrs = Array<Grid::shape_ptr>(totalRefCount);
+<     glyph_grid_cells = Array<Grid::GlyphGridCell>(totalCellCount);
+< 	glyph_grids = Array<Grid::GlyphGrid>(numSimpleGlyphs);
+< 	int shape_ptr_offset = 0;
+< 	int grid_cell_offset = 0;
+< 	for (size_t i = 0; i < numSimpleGlyphs; i++) {
+< 		if (!builders[i])
+< 		{
+< 			glyph_grids[i].null = true;
+< 			continue;
+< 		}
+< 		glyph_grids[i].null = false;
+< 		memcpy(((Grid::GlyphGridCell*)glyph_grid_cells) + grid_cell_offset, builders[i]->shapeOffsets, sizeof(Grid::GlyphGridCell)*builders[i]->cellCount);
+< 		memcpy(((Grid::shape_ptr*)shape_ptrs) + shape_ptr_offset, builders[i]->shapePtrs, sizeof(Grid::shape_ptr)*builders[i]->totalRefs);
+< 		glyph_grids[i].first_cell = grid_cell_offset;
+< 		glyph_grids[i].ptr_fixup = shape_ptr_offset;
+< 		glyph_grids[i].lowest_x = builders[i]->lowest_x;
+< 		glyph_grids[i].lowest_y = builders[i]->lowest_y;
+< 		glyph_grids[i].highest_x = builders[i]->highest_x;
+< 		glyph_grids[i].highest_y = builders[i]->highest_y;
+< 		glyph_grids[i].hres = builders[i]->hres;
+< 		glyph_grids[i].vres = builders[i]->vres;
+< 		grid_cell_offset += builders[i]->cellCount;
+< 		shape_ptr_offset += builders[i]->totalRefs;
+< 		delete builders[i];
+< 	}
+---
+>     // Allocate final shape and node array and build the BVHs.
+>     nodes = Array<Box4Node>(totalNodeCount);
+>     shapes = Array<Shape>(totalShapes);
+>     for (size_t i = 0; i < numSimpleGlyphs; i++) {
+>         if (!builders[i]) continue;
+>         auto glyphInfo = simpleGlyphInfos + i;
+>         builders[i]->TranscribeBVH(nodes + (size_t)glyphInfo->entryNode, shapes, glyphInfo->firstShape);
+>         delete builders[i];
+>     }
+> 
+1187,1234d1114
+< 
+< size_t FontRenderInfo::LayoutGlyphs(Grid::GridRef* glyphRefs,
+< 									int meshIndex,
+< 									const unsigned* codepoints,
+< 									size_t numCodepoints) {
+< 	if (!glyphRefs) {
+< 		// Count the drawn glyphs.
+< 		size_t drawnGlyphCount = 0;
+< 		for (auto j = 0; j < numCodepoints; j++) {
+< 			if (codepoints[j] == '\n') continue;
+< 			auto index = codepointIndex[codepoints[j]];
+< 			if (index >= 0) {
+< 				auto glyphInfo = simpleGlyphInfos + (size_t)index;
+< 				if (glyphInfo->entryNode != -1) drawnGlyphCount++;
+< 				continue;
+< 			}
+< 			auto compoundInfo = compoundGlyphInfos + (size_t)~index;
+< 			for (auto i = compoundInfo->firstElement, e = compoundInfo[1].firstElement; i < e; i++) {
+< 				auto glyphInfo = simpleGlyphInfos + (size_t)compoundElements[i].glyphID;
+< 				if (glyphInfo->entryNode != -1) drawnGlyphCount++;
+< 			}
+< 		}
+< 		return drawnGlyphCount;
+< 	}
+< 
+< 	auto nextGlyphRef = glyphRefs;
+< 	float pen_x = 0, pen_y = 0;
+< 	for (auto j = 0; j < numCodepoints; j++) {
+< 		if (codepoints[j] == '\n') {
+< 			pen_x = 0;
+< 			pen_y += lineSpacing;
+< 			continue;
+< 		}
+< 		auto index = codepointIndex[codepoints[j]];
+< 		if (index >= 0) {
+< 			// Layout a simple glyph.
+< 			auto glyphInfo = simpleGlyphInfos + (size_t)index;
+< 			if (glyphInfo->entryNode != -1) {
+< 				nextGlyphRef->objectFromParent = invert(Grid::Matrix2x3(1, 0, pen_x, 0, 1, pen_y));
+< 				nextGlyphRef->nodeIndex = glyphInfo->entryNode;
+< 				nextGlyphRef->codeindex = index;
+< 				nextGlyphRef++;
+< 			}
+< 			pen_x += glyphInfo->advanceWidth;
+< 		}
+< 	}
+< 	return nextGlyphRef - glyphRefs;
+< }
+\ No newline at end of file
+diff -r thorax/renderer/drawcontext.h thorax_truetype-master/renderer/drawcontext.h
+18,19d17
+< // This file was modified from it's original form by Apollo I. Ellis
+< 
+22,26c20
+< #include "../grid_types.h"
+< #include "../thorax_truetype.h"
+< 
+< namespace thorax_ai
+< {
+---
+> #include <truetype/thorax_truetype.h>
+28,130c22,95
+< 	//==============================================================================
+< 	// ShapeBuilder API
+< 	//==============================================================================
+< 
+< 	struct ShapeBuilder {
+< 		virtual ~ShapeBuilder() {}
+< 		virtual void Clear(size_t reserve = 0) = 0;
+< 		virtual size_t GenerateShapes(const Segment* segments,
+< 			const size_t* contourSizes,
+< 			size_t numCountours,
+< 			Shape* shapes) = 0;
+< 	};
+< 
+< 	//==============================================================================
+< 	// Drawing Context API
+< 	//==============================================================================
+< 
+< 	struct DrawContext {
+< 		virtual size_t SetRenderTarget(unsigned* renderTarget, int width, int height, size_t stride) = 0;
+< 		virtual void SetViewport(float lower_x, float lower_y, float upper_x, float upper_y) = 0;
+< 		virtual void SetFilterKernel(float x0, float y0, float x1, float y1) = 0; //< in screen space (1 == 1 pixel)
+< 		virtual void Draw(const Mesh* scene, const Matrix2x3& screenFromLayout) = 0;
+< 		virtual ~DrawContext() {}
+< 
+< 		static DrawContext* Create(unsigned numThreads = 1);
+< 		static void Destroy(DrawContext*& context);
+< 	};
+< 
+< 	//==============================================================================
+< 	// FontRenderInfo
+< 	//==============================================================================
+< 
+< 	struct FontRenderInfo {
+< 		bool Initialize(const Font* font);
+< 		void Clear();
+< 		size_t LayoutGlyphs(Box4NodeRef* glyphRefs, int meshIndex, const unsigned* codepoints, size_t numCodepoints);
+< 		size_t LayoutGlyphs(Grid::GridRef* glyphRefs, int meshIndex, const unsigned* codepoints, size_t numCodepoints);
+< 		struct SimpleGlyphInfo {
+< 			unsigned firstShape;
+< 			unsigned entryNode;
+< 			unsigned gridOffset;
+< 			float advanceWidth;
+< 		};
+< 
+< 		struct CompoundGlyphInfo {
+< 			unsigned firstElement;
+< 			float advanceWidth;
+< 		};
+< 
+< 		struct CompoundElement {
+< 			Matrix2x3 transform;
+< 			unsigned glyphID;
+< 		};
+< 
+< 		// codepoint->index buffer
+< 		// Negative codepoints indicate compound glyphs, the index i for i < 0 is compoundGlyphInfos[~i].
+< 		int* codepointIndex = nullptr;
+< 
+< 		// Glyph information buffers.
+< 		Array<SimpleGlyphInfo> simpleGlyphInfos;     // 
+< 		Array<CompoundGlyphInfo> compoundGlyphInfos; // 
+< 		Array<CompoundElement> compoundElements;     //
+< 		Array<Box4Node> nodes;                       // List of all BVH nodes used by all glyphs.
+< 		Array<Shape> shapes;                         // List of all shapes used by all glyphs.
+< 		Array<Grid::shape_ptr> shape_ptrs;
+< 		Array<Grid::GlyphGridCell> glyph_grid_cells;
+< 		Array<Grid::GlyphGrid> glyph_grids;
+< 
+< 		// All values in master grids units.
+< 		float emsPerUnit = 0;
+< 		float ascent = 0;         // Distance from baseline of highest ascender.
+< 		float descent = 0;        // Distance from baseline of lowest descender.
+< 		float lineGap = 0;        // Typographic line gap.
+< 		float lineSpacing = 0;    // Total advance height from line to line.
+< 		float caretSlopeRise = 0; // Used to calculate the slope of the caret (rise/run) set to 1 for vertical caret.
+< 		float caretSlopeRun = 0;  // 0 for vertical
+< 		float caretOffset = 0;    // set value to 0 for non-slanted fonts
+< 	};
+< 
+< 	struct GlyphGridBuilder {
+< 		GlyphGridBuilder(const Shape* shapes, size_t numShapes, size_t firstShape);
+< 		struct ShapeEvent {
+< 			ShapeEvent(int id, float start, float end)
+< 				:id(id), start(start), end(end) {}
+< 			int id;
+< 			float start;
+< 			float end;
+< 		};
+< 		static bool EventCompare(const ShapeEvent &a, const ShapeEvent &b) {
+< 			return a.start < b.start;
+< 		}
+< 		bool null = false;
+< 		size_t hres, vres;
+< 		float lowest_x;
+< 		float lowest_y;
+< 		float highest_x;
+< 		float highest_y;
+< 		int cellCount;
+< 		int totalRefs;
+< 		Grid::shape_ptr *shapePtrs;
+< 		Grid::GlyphGridCell *shapeOffsets;
+< 	};
+< }
+\ No newline at end of file
+---
+> //==============================================================================
+> // ShapeBuilder API
+> //==============================================================================
+> 
+> struct ShapeBuilder {
+>     virtual ~ShapeBuilder() {}
+>     virtual void Clear(size_t reserve = 0) = 0;
+>     virtual size_t GenerateShapes(const Segment* segments,
+>                                   const size_t* contourSizes,
+>                                   size_t numCountours,
+>                                   Shape* shapes) = 0;
+> };
+> 
+> //==============================================================================
+> // Drawing Context API
+> //==============================================================================
+> 
+> struct DrawContext {
+>     virtual size_t SetRenderTarget(unsigned* renderTarget, int width, int height, size_t stride) = 0;
+>     virtual void SetViewport(float lower_x, float lower_y, float upper_x, float upper_y) = 0;
+>     virtual void SetFilterKernel(float x0, float y0, float x1, float y1) = 0; //< in screen space (1 == 1 pixel)
+>     virtual void Draw(const Mesh* scene, const Matrix2x3& screenFromLayout) = 0;
+>     virtual ~DrawContext() {}
+> 
+>     static DrawContext* Create(unsigned numThreads = 1);
+>     static void Destroy(DrawContext*& context);
+> };
+> 
+> //==============================================================================
+> // FontRenderInfo
+> //==============================================================================
+> 
+> struct FontRenderInfo {
+>     bool Initialize(const Font* font);
+>     void Clear();
+>     size_t LayoutGlyphs(Box4NodeRef* glyphRefs, int meshIndex, const unsigned* codepoints, size_t numCodepoints);
+> 
+>     struct SimpleGlyphInfo {
+>         unsigned firstShape;
+>         unsigned entryNode;
+>         float advanceWidth;
+>     };
+> 
+>     struct CompoundGlyphInfo {
+>         unsigned firstElement;
+>         float advanceWidth;
+>     };
+> 
+>     struct CompoundElement {
+>         Matrix2x3 transform;
+>         unsigned glyphID;
+>     };
+> 
+>     // codepoint->index buffer
+>     // Negative codepoints indicate compound glyphs, the index i for i < 0 is compoundGlyphInfos[~i].
+>     int* codepointIndex = nullptr;                   
+> 
+>     // Glyph information buffers.
+>     Array<SimpleGlyphInfo> simpleGlyphInfos;     // 
+>     Array<CompoundGlyphInfo> compoundGlyphInfos; // 
+>     Array<CompoundElement> compoundElements;     //
+>     Array<Box4Node> nodes;                       // List of all BVH nodes used by all glyphs.
+>     Array<Shape> shapes;                         // List of all shapes used by all glyphs.
+> 
+>     // All values in master grids units.
+>     float emsPerUnit = 0;
+>     float ascent = 0;         // Distance from baseline of highest ascender.
+>     float descent = 0;        // Distance from baseline of lowest descender.
+>     float lineGap = 0;        // Typographic line gap.
+>     float lineSpacing = 0;    // Total advance height from line to line.
+>     float caretSlopeRise = 0; // Used to calculate the slope of the caret (rise/run) set to 1 for vertical caret.
+>     float caretSlopeRun = 0;  // 0 for vertical
+>     float caretOffset = 0;    // set value to 0 for non-slanted fonts
+> };
+Only in thorax/renderer: grid_builders.cpp
+diff -r thorax/renderer/types.h thorax_truetype-master/renderer/types.h
+18,19d17
+< // This file was modified from it's original form by Apollo I. Ellis
+< 
+25,394c23,387
+< namespace thorax_ai
+< {
+< 
+< 	//==============================================================================
+< 	// Abstraction of vector hardware.
+< 	//==============================================================================
+< 
+< 	__forceinline float floatInfinity() {
+< 		static const unsigned bits = 0x7f800000u;
+< 		return *(float*)&bits;
+< 	}
+< 
+< 	struct float4 {
+< 		float4() = default;
+< 		__forceinline float4(__m128 data) : data(data) {}
+< 		__forceinline explicit float4(float a) : data(_mm_set1_ps(a)) {}
+< 		__forceinline float4(float v0, float v1, float v2, float v3) : data(_mm_setr_ps(v0, v1, v2, v3)) {}
+< 		__forceinline static float4 SignMask() { return float4(-0.0f); }
+< 		__forceinline float4 operator-() const { return *this ^ SignMask(); }
+< 		__forceinline float4 operator+(float4 a) const { return _mm_add_ps(data, a.data); }
+< 		__forceinline float4 operator*(float4 a) const { return _mm_mul_ps(data, a.data); }
+< 		__forceinline float4 operator^(float4 a) const { return _mm_xor_ps(data, a.data); }
+< 		__forceinline float& operator[](size_t i) { return data.m128_f32[i]; }
+< 		__forceinline float operator[](size_t i) const { return data.m128_f32[i]; }
+< 		__m128 data;
+< 	};
+< 
+< 	__forceinline float4 min(float4 a, float4 b) { return _mm_min_ps(a.data, b.data); }
+< 	__forceinline float4 max(float4 a, float4 b) { return _mm_max_ps(a.data, b.data); }
+< 	__forceinline float4 round_up(float4 a) { return _mm_round_ps(a.data, _MM_FROUND_TO_POS_INF); }
+< 	__forceinline int movemask(float4 a) { return _mm_movemask_ps(a.data); }
+< 	template <int i0, int i1, int i2, int i3> __forceinline float4 shuffle(float4 a) {
+< 		return _mm_castsi128_ps(_mm_shuffle_epi32(_mm_castps_si128(a.data), i0 + i1 * 4 + i2 * 16 + i3 * 64));
+< 	}
+< 	template <int i0, int i1, int i2, int i3> __forceinline float4 shuffle(float4 a, float4 b) {
+< 		return _mm_shuffle_ps(a.data, b.data, i0 + i1 * 4 + i2 * 16 + i3 * 64);
+< 	}
+< 
+< 	struct int4 {
+< 		__forceinline int4(__m128i a) : data(a) {}
+< 		__forceinline int4(int v0, int v1, int v2, int v3) : data(_mm_setr_epi32(v0, v1, v2, v3)) {}
+< 		__forceinline explicit int4(float4 a) : data(_mm_cvtps_epi32(a.data)) {}
+< 		__forceinline static int4 True(__m128i any = _mm_setzero_si128()) { return _mm_cmpeq_epi32(any, any); }
+< 		__forceinline int4 operator+(int4 a) const { return _mm_add_epi32(data, a.data); }
+< 		__forceinline int operator[](size_t i) const { return data.m128i_i32[i]; }
+< 		__m128i data;
+< 	};
+< 
+< 	__forceinline int movemask(int4 a) { return _mm_movemask_ps(_mm_castsi128_ps(a.data)); }
+< 	template <int i0, int i1, int i2, int i3> __forceinline int4 shuffle(int4 a) {
+< 		return _mm_shuffle_epi32(a.data, i0 + i1 * 4 + i2 * 16 + i3 * 64);
+< 	}
+< 
+< 	struct float8 {
+< 		float8() = default;
+< 		__forceinline float8(__m256 data) : data(data) {}
+< 		__forceinline explicit float8(float v) : data(_mm256_set1_ps(v)) {}
+< 		__forceinline float8(float4 a, float4 b) : data(_mm256_insertf128_ps(_mm256_castps128_ps256(a.data), b.data, 1)) {}
+< 		__forceinline float8(float v0, float v1, float v2, float v3, float v4, float v5, float v6, float v7)
+< 			: data(_mm256_setr_ps(v0, v1, v2, v3, v4, v5, v6, v7)) {}
+< 		__forceinline static float8 Zero() { return _mm256_setzero_ps(); }
+< 		__forceinline static float8 SignMask() { return float8(-0.0f); }
+< 		__forceinline static float8 Load(const float* p) { return _mm256_load_ps(p); }
+< 		__forceinline static float8 LoadU(const float* p) { return _mm256_loadu_ps(p); }
+< 		__forceinline float8 operator-() const { return *this ^ SignMask(); }
+< 		__forceinline float8 operator+(float8 a) const { return _mm256_add_ps(data, a.data); }
+< 		__forceinline float8 operator-(float8 a) const { return _mm256_sub_ps(data, a.data); }
+< 		__forceinline float8 operator*(float8 a) const { return _mm256_mul_ps(data, a.data); }
+< 		__forceinline float8 operator/(float8 a) const { return _mm256_div_ps(data, a.data); }
+< 		__forceinline float8& operator+=(float8 a) { return data = _mm256_add_ps(data, a.data), *this; }
+< 		__forceinline float8& operator-=(float8 a) { return data = _mm256_sub_ps(data, a.data), *this; }
+< 		__forceinline float8 operator&(float8 a) const { return _mm256_and_ps(data, a.data); }
+< 		__forceinline float8 operator^(float8 a) const { return _mm256_xor_ps(data, a.data); }
+< 		__forceinline float8 operator|(float8 a) const { return _mm256_or_ps(data, a.data); }
+< 		__forceinline float8 operator <=(float8 a) const { return _mm256_cmp_ps(data, a.data, _CMP_LE_OQ); }
+< 		__forceinline float operator[](size_t i) const { return data.m256_f32[i]; }
+< 		__forceinline float4 v0123() const { return _mm256_castps256_ps128(data); }
+< 		__forceinline float4 v4567() const { return _mm256_extractf128_ps(data, 1); }
+< 		__m256 data;
+< 	};
+< 
+< 	__forceinline float8 madd(float8 a, float8 b, float8 c) { return _mm256_fmadd_ps(a.data, b.data, c.data); }
+< 	__forceinline float8 nmadd(float8 a, float8 b, float8 c) { return _mm256_fnmadd_ps(a.data, b.data, c.data); }
+< 	__forceinline float8 msub(float8 a, float8 b, float8 c) { return _mm256_fmsub_ps(a.data, b.data, c.data); }
+< 	__forceinline float8 nmsub(float8 a, float8 b, float8 c) { return _mm256_fnmsub_ps(a.data, b.data, c.data); }
+< 	__forceinline float8 min(float8 a, float8 b) { return _mm256_min_ps(a.data, b.data); }
+< 	__forceinline float8 max(float8 a, float8 b) { return _mm256_max_ps(a.data, b.data); }
+< 	__forceinline float8 sqrt(float8 a) { return _mm256_sqrt_ps(a.data); }
+< 	__forceinline float8 blend(float8 a, float8 b, float8 mask) { return _mm256_blendv_ps(a.data, b.data, mask.data); }
+< 	__forceinline int movemask(float8 a) { return _mm256_movemask_ps(a.data); }
+< 	template <int i0, int i1, int i2, int i3> __forceinline float8 shuffle(float8 a) {
+< 		return _mm256_permute_ps(a.data, i0 + i1 * 4 + i2 * 16 + i3 * 64);
+< 	}
+< 	template <int i0, int i1, int i2, int i3> __forceinline float8 shuffle(float8 a, float8 b) {
+< 		return _mm256_shuffle_ps(a.data, b.data, i0 + i1 * 4 + i2 * 16 + i3 * 64);
+< 	}
+< 	template <int i0, int i1> __forceinline float8 shuffle4(float8 a) {
+< 		return _mm256_permute2f128_ps(a.data, a.data, i0 + i1 * 16);
+< 	}
+< 	template <int i0, int i1, int i2, int i3> __forceinline float8 shuffle2(float8 a) {
+< 		return _mm256_castpd_ps(_mm256_permute4x64_pd(_mm256_castps_pd(a.data), i0 + i1 * 4 + i2 * 16 + i3 * 64));
+< 	}
+< 
+< 	struct int8 {
+< 		__forceinline int8(__m256i a) : data(a) {}
+< 		__forceinline explicit int8(int v) : data(_mm256_set1_epi32(v)) {}
+< 		__forceinline explicit int8(float8 a) : data(_mm256_cvtps_epi32(a.data)) {}
+< 		__forceinline int8 operator*(int8 a) const { return _mm256_mullo_epi32(data, a.data); }
+< 		__forceinline void storeu(int* p) const { return _mm256_storeu_si256((__m256i*)p, data); }
+< 		__m256i data;
+< 	};
+< 	__forceinline int8 unpack4lo(int8 a, int8 b) { return _mm256_permute2x128_si256(a.data, b.data, 0x20); }
+< 	__forceinline int8 unpack4hi(int8 a, int8 b) { return _mm256_permute2x128_si256(a.data, b.data, 0x31); }
+< 
+< 	struct short16 {
+< 		explicit short16(short v) : data(_mm256_set1_epi16(v)) {}
+< 		short16(__m256i a) : data(a) {}
+< 		static __forceinline short16 loadu(const short* p) { return _mm256_loadu_si256((__m256i*)p); }
+< 		__forceinline short16 operator-(short16 a) const { return _mm256_sub_epi16(data, a.data); }
+< 		int8 ZeroExtendUnpackLo() const { return _mm256_unpacklo_epi16(data, _mm256_setzero_si256()); }
+< 		int8 ZeroExtendUnpackHi() const { return _mm256_unpackhi_epi16(data, _mm256_setzero_si256()); }
+< 		__m256i data;
+< 	};
+< 	__forceinline short16 abs(short16 a) { return _mm256_abs_epi16(a.data); }
+< 	template <int i> __forceinline short16 srli(short16 a) { return _mm256_srli_epi16(a.data, i); }
+< 	__forceinline short16 min(short16 a, short16 b) { return _mm256_min_epi16(a.data, b.data); }
+< 
+< 	struct short8 {
+< 		short8(__m128i a) : data(a) {}
+< 		short8(__int64 v0123, __int64 v4567) : data(_mm_setr_epi64x(v0123, v4567)) {}
+< 		__forceinline static short8 Pack(int8 a) {
+< 			auto x = float8(_mm256_castsi256_ps(_mm256_shufflehi_epi16(_mm256_shufflelo_epi16(a.data, 0xd8), 0xd8)));
+< 			return _mm_castps_si128(shuffle<0, 2, 0, 2>(x.v0123(), x.v4567()).data);
+< 		}
+< 		__forceinline short8 operator+(short8 a) const { return _mm_add_epi16(data, a.data); }
+< 		__forceinline __int64 v0123() const { return _mm_extract_epi64(data, 0); }
+< 		__forceinline __int64 v4567() const { return _mm_extract_epi64(data, 1); }
+< 		__m128i data;
+< 	};
+< 
+< 	//==============================================================================
+< 	// DynamicArray
+< 	//==============================================================================
+< 
+< 	template <typename T> struct Array {
+< 		Array() : data(nullptr), size(0) {}
+< 		Array(size_t size, size_t alignment = __alignof(T))
+< 			: data(size ? (T*)_aligned_malloc(sizeof(T) * size, alignment) : nullptr), size(size) {}
+< 		Array(const Array& a) : Array(a.size) {
+< 			for (size_t i = 0; i < size; i++) data[i] = a.data[i];
+< 		}
+< 		Array(Array&& a) : data(a.data), size(a.size) { a.data = nullptr; }
+< 		~Array() {
+< 			if (data) _aligned_free(data);
+< 		}
+< 		explicit operator bool() const { return data != nullptr; }
+< 		operator T*() const { return data; }
+< 		T* operator+(size_t i) const {
+< 			assert(i < size);
+< 			return data + i;
+< 		}
+< 		Array& operator=(Array a) {
+< 			auto temp = data;
+< 			data = a.data;
+< 			size = a.size;
+< 			a.data = temp;
+< 			return *this;
+< 		}
+< 		T& operator[](size_t i) {
+< 			assert(i < size);
+< 			return data[i];
+< 		}
+< 		T operator[](size_t i) const {
+< 			assert(i < size);
+< 			return data[i];
+< 		}
+< 		T* begin() { return data; }
+< 		T* end() { return data + size; }
+< 		const T* begin() const { return data; }
+< 		const T* end() const { return data + size; }
+< 		T* data;
+< 		size_t size;
+< 	};
+< 
+< 	// TODO: delete me and add an initializer iterator for Array.
+< 	template <typename T> struct DynamicArray {
+< 		DynamicArray() : data(nullptr), size(0), capacity(0) {}
+< 		DynamicArray(size_t capacity, size_t size = 0, size_t alignment = __alignof(T))
+< 			: data(capacity ? (T*)_aligned_malloc(sizeof(T) * capacity, alignment) : nullptr),
+< 			size(size),
+< 			capacity(capacity) {
+< 			assert(size <= capacity);
+< 		}
+< 		DynamicArray(const DynamicArray& a) : DynamicArray(a.size) {
+< 			for (size_t i = 0; i < size; i++) data[i] = a.data[i];
+< 		}
+< 		DynamicArray(DynamicArray&& a) : data(a.data), size(a.size), capacity(capacity) { a.data = nullptr; }
+< 		~DynamicArray() {
+< 			if (data) _aligned_free(data);
+< 		}
+< 		explicit operator bool() const { return data != nullptr; }
+< 		DynamicArray& operator=(DynamicArray a) {
+< 			auto temp = data;
+< 			data = a.data;
+< 			size = a.size;
+< 			capacity = a.capacity;
+< 			a.data = temp;
+< 			return *this;
+< 		}
+< 		T& operator[](size_t i) {
+< 			assert(i < size);
+< 			return data[i];
+< 		}
+< 		T operator[](size_t i) const {
+< 			assert(i < size);
+< 			return data[i];
+< 		}
+< 		void Resize(size_t new_size) {
+< 			assert(new_size <= capacity);
+< 			size = new_size;
+< 		}
+< 		template <typename... Args> void Push(const Args&... args) {
+< 			assert(size < capacity);
+< 			data[size++] = T(args...);
+< 		}
+< 		T* begin() { return data; }
+< 		T* end() { return data + size; }
+< 		const T* begin() const { return data; }
+< 		const T* end() const { return data + size; }
+< 		T* data;
+< 		size_t size, capacity;
+< 	};
+< 
+< 	//==============================================================================
+< 	// Vector Types
+< 	//==============================================================================
+< 
+< 	struct Vector {
+< 		Vector() = default;
+< 		Vector(float x, float y) : x(x), y(y) {}
+< 		Vector operator+(const Vector& a) const { return Vector(x + a.x, y + a.y); }
+< 		Vector operator-(const Vector& a) const { return Vector(x - a.x, y - a.y); }
+< 		Vector operator*(float a) const { return Vector(x * a, y * a); }
+< 		float x, y;
+< 	};
+< 
+< 	struct Point {
+< 		Point() = default;
+< 		Point(float x, float y) : x(x), y(y) {}
+< 		explicit Point(const Vector& a) : x(a.x), y(a.y) {}
+< 		Vector operator-(const Point& a) const { return Vector(x - a.x, y - a.y); }
+< 		float x, y;
+< 	};
+< 
+< 	struct __declspec(align(8)) Matrix2x3 {
+< 		Matrix2x3() = default;
+< 		Matrix2x3(float x_x, float y_x, float w_x, float x_y, float y_y, float w_y)
+< 			: x(x_x, x_y), y(y_x, y_y), w(w_x, w_y) {}
+< 		Matrix2x3(const Vector& x, const Vector& y, const Point& w) : x(x), y(y), w(w) {}
+< 		Vector operator*(const Vector& a) const { return Vector(x.x * a.x + y.x * a.y, x.y * a.x + y.y * a.y); };
+< 		Point operator*(const Point& a) const { return Point(x.x * a.x + y.x * a.y + w.x, x.y * a.x + y.y * a.y + w.y); };
+< 		Matrix2x3 operator*(const Matrix2x3& a) const { return Matrix2x3((*this) * a.x, (*this) * a.y, (*this) * a.w); }
+< 		Vector x, y;
+< 		Point w;
+< 	};
+< 
+< 	static inline Matrix2x3 invert(const Matrix2x3& a) {
+< 		auto scale = 1.0f / (a.x.x * a.y.y - a.x.y * a.y.x);
+< 		auto x = Vector(a.y.y, -a.x.y) * scale;
+< 		auto y = Vector(-a.y.x, a.x.x) * scale;
+< 		auto w = Point(x * -a.w.x - y * a.w.y);
+< 		return Matrix2x3(x, y, w);
+< 	}
+< 
+< 	//==============================================================================
+< 	// Basic Types
+< 	//==============================================================================
+< 
+< 	struct short2 {
+< 		short x, y;
+< 	};
+< 
+< 	struct __declspec(align(8)) Segment {
+< 		Segment() = default;
+< 		Segment(short2 vert, short2 knot) : vert(vert), knot(knot) {}
+< 
+< 		short2 vert;
+< 		short2 knot;
+< 	};
+< 
+< 	//==============================================================================
+< 	// Packed Types
+< 	//==============================================================================
+< 
+< 	struct Box {
+< 		Box() = default;
+< 		explicit Box(float4 data) : data(data) {}
+< 		Box(float lower_x, float lower_y, float upper_x, float upper_y) : data(-lower_x, -lower_y, upper_x, upper_y) {}
+< 		Box(const Point& a) : data(-a.x, -a.y, a.x, a.y) {}
+< 		Box operator+(const Box& a) const { return Box(data + a.data); }
+< 		Box operator&(const Box& a) const { return Box(min(data, a.data)); }
+< 		Box operator|(const Box& a) const { return Box(max(data, a.data)); }
+< 		Box& operator|=(const Box& a) {
+< 			data = max(data, a.data);
+< 			return *this;
+< 		}
+< 		static Box Empty() { return Box(float4(-floatInfinity())); }
+< 		float4 data; // -lower_x, -lower_y, upper_x, upper_y
+< 	};
+< 
+< 	struct Shape {
+< 		explicit Shape(float8 p0v1p2v3) : p0v1p2v3(p0v1p2v3) {}
+< 		Shape(float x0, float x1, float x2, float x3, float y0, float y1)
+< 			: p0v1p2v3(x0, y0, x1 - x0, y1 - y0, x2, y1, x3 - x2, y0 - y1) {}
+< 		Shape(const Point& p0, const Vector& v1, const Vector& v2)
+< 			: p0v1p2v3(p0.x, p0.y, v1.x, v1.y, p0.x, p0.y, v2.x, v2.y) {}
+< 		bool IsTrapazoid() const { return p0v1p2v3[1] != p0v1p2v3[5]; }
+< 		bool IsBox4NodeRef() const { return (((const unsigned*)this)[7] >> 23) == 0; } // sign and exponent will be 0 only for ref?? TODO: make me NAN instead
+< 		Box Bound() const {
+< 			auto p1__p3__ = p0v1p2v3 + shuffle<2, 3, 2, 3>(p0v1p2v3);
+< 			auto temp0 = -min(p0v1p2v3, p1__p3__);
+< 			auto temp1 = max(p0v1p2v3, p1__p3__);
+< 			auto lower = max(temp0.v0123(), temp0.v4567());
+< 			auto upper = max(temp1.v0123(), temp1.v4567());
+< 			return Box(shuffle<0, 1, 0, 1>(lower, upper));
+< 		}
+< 		float8 p0v1p2v3;
+< 	};
+< 
+< 	struct __declspec(align(32)) Box4NodeRef {
+< 		Matrix2x3 objectFromParent;
+< 		int meshIndex; // Relative from the current mesh.
+< 		unsigned nodeIndex; // Relative to the base shape of the current mesh.
+< 	};
+< 
+< 	struct __declspec(align(32)) Box4Node {
+< 		const Box4Node* Child(size_t i) const { return (const Box4Node*)((const char*)this + data[1 + i]); }
+< 		Box4Node* Child(size_t i) { return (Box4Node*)((char*)this + data[1 + i]); }
+< 		const Shape* ShapesAt(const Shape* shapes, size_t i) const { return (const Shape*)((const char*)shapes + data[i]); }
+< 		const Box4NodeRef* Box4NodeRefAt(const Shape* shapes, size_t i) const { return (const Box4NodeRef*)((const char*)shapes + data[i]); }
+< 		unsigned IsLeaf(size_t i) const { return leafMask & (1u << i); }
+< 		Box Bound(size_t i) const { return Box(float4(-min_x[i], -min_y[i], max_x[i], max_y[i])); }
+< 
+< 		Box Bound() const { return Bound(0) | Bound(1) | Bound(2) | Bound(3); }
+< 
+< 		Box Bound(const Matrix2x3& m) const {
+< 			Box box = Box::Empty();
+< 			for (size_t i = 0; i < 4; i++) {
+< 				if (data[i] == data[i + 1]) continue;
+< 				box |= Box(m * Point(min_x[i], min_y[i]));
+< 				box |= Box(m * Point(min_x[i], max_y[i]));
+< 				box |= Box(m * Point(max_x[i], min_y[i]));
+< 				box |= Box(m * Point(max_x[i], max_y[i]));
+< 			}
+< 			return box;
+< 		}
+< 
+< 		float min_x[4], min_y[4];
+< 		float max_x[4], max_y[4];
+< 		unsigned data[5];
+< 		unsigned char leafMask;
+< 		char PADDING[10];
+< 	};
+< 
+< 	struct Mesh {
+< 		const Shape* shapes;
+< 		const Box4Node* nodes;
+< 	};
+< 
+< }
+\ No newline at end of file
+---
+> //==============================================================================
+> // Abstraction of vector hardware.
+> //==============================================================================
+> 
+> __forceinline float floatInfinity() {
+>     static const unsigned bits = 0x7f800000u;
+>     return *(float*)&bits;
+> }
+> 
+> struct float4 {
+>     float4() = default;
+>     __forceinline float4(__m128 data) : data(data) {}
+>     __forceinline explicit float4(float a) : data(_mm_set1_ps(a)) {}
+>     __forceinline float4(float v0, float v1, float v2, float v3) : data(_mm_setr_ps(v0, v1, v2, v3)) {}
+>     __forceinline static float4 SignMask() { return float4(-0.0f); }
+>     __forceinline float4 operator-() const { return *this ^ SignMask(); }
+>     __forceinline float4 operator+(float4 a) const { return _mm_add_ps(data, a.data); }
+>     __forceinline float4 operator*(float4 a) const { return _mm_mul_ps(data, a.data); }
+>     __forceinline float4 operator^(float4 a) const { return _mm_xor_ps(data, a.data); }
+>     __forceinline float& operator[](size_t i) { return data.m128_f32[i]; }
+>     __forceinline float operator[](size_t i) const { return data.m128_f32[i]; }
+>     __m128 data;
+> };
+> 
+> __forceinline float4 min(float4 a, float4 b) { return _mm_min_ps(a.data, b.data); }
+> __forceinline float4 max(float4 a, float4 b) { return _mm_max_ps(a.data, b.data); }
+> __forceinline float4 round_up(float4 a) { return _mm_round_ps(a.data, _MM_FROUND_TO_POS_INF); }
+> __forceinline int movemask(float4 a) { return _mm_movemask_ps(a.data); }
+> template <int i0, int i1, int i2, int i3> __forceinline float4 shuffle(float4 a) {
+>     return _mm_castsi128_ps(_mm_shuffle_epi32(_mm_castps_si128(a.data), i0 + i1 * 4 + i2 * 16 + i3 * 64));
+> }
+> template <int i0, int i1, int i2, int i3> __forceinline float4 shuffle(float4 a, float4 b) {
+>     return _mm_shuffle_ps(a.data, b.data, i0 + i1 * 4 + i2 * 16 + i3 * 64);
+> }
+> 
+> struct int4 {
+>     __forceinline int4(__m128i a) : data(a) {}
+>     __forceinline int4(int v0, int v1, int v2, int v3) : data(_mm_setr_epi32(v0, v1, v2, v3)) {}
+>     __forceinline explicit int4(float4 a) : data(_mm_cvtps_epi32(a.data)) {}
+>     __forceinline static int4 True(__m128i any = _mm_setzero_si128()) { return _mm_cmpeq_epi32(any, any); }
+>     __forceinline int4 operator+(int4 a) const { return _mm_add_epi32(data, a.data); }
+>     __forceinline int operator[](size_t i) const { return data.m128i_i32[i]; }
+>     __m128i data;
+> };
+> 
+> __forceinline int movemask(int4 a) { return _mm_movemask_ps(_mm_castsi128_ps(a.data)); }
+> template <int i0, int i1, int i2, int i3> __forceinline int4 shuffle(int4 a) {
+>     return _mm_shuffle_epi32(a.data, i0 + i1 * 4 + i2 * 16 + i3 * 64);
+> }
+> 
+> struct float8 {
+>     float8() = default;
+>     __forceinline float8(__m256 data) : data(data) {}
+>     __forceinline explicit float8(float v) : data(_mm256_set1_ps(v)) {}
+>     __forceinline float8(float4 a, float4 b) : data(_mm256_insertf128_ps(_mm256_castps128_ps256(a.data), b.data, 1)) {}
+>     __forceinline float8(float v0, float v1, float v2, float v3, float v4, float v5, float v6, float v7)
+>         : data(_mm256_setr_ps(v0, v1, v2, v3, v4, v5, v6, v7)) {}
+>     __forceinline static float8 Zero() { return _mm256_setzero_ps(); }
+>     __forceinline static float8 SignMask() { return float8(-0.0f); }
+>     __forceinline static float8 Load(const float* p) { return _mm256_load_ps(p); }
+>     __forceinline static float8 LoadU(const float* p) { return _mm256_loadu_ps(p); }
+>     __forceinline float8 operator-() const { return *this ^ SignMask(); }
+>     __forceinline float8 operator+(float8 a) const { return _mm256_add_ps(data, a.data); }
+>     __forceinline float8 operator-(float8 a) const { return _mm256_sub_ps(data, a.data); }
+>     __forceinline float8 operator*(float8 a) const { return _mm256_mul_ps(data, a.data); }
+>     __forceinline float8 operator/(float8 a) const { return _mm256_div_ps(data, a.data); }
+>     __forceinline float8& operator+=(float8 a) { return data = _mm256_add_ps(data, a.data), *this; }
+>     __forceinline float8& operator-=(float8 a) { return data = _mm256_sub_ps(data, a.data), *this; }
+>     __forceinline float8 operator&(float8 a) const { return _mm256_and_ps(data, a.data); }
+>     __forceinline float8 operator^(float8 a) const { return _mm256_xor_ps(data, a.data); }
+>     __forceinline float8 operator|(float8 a) const { return _mm256_or_ps(data, a.data); }
+>     __forceinline float8 operator <=(float8 a) const { return _mm256_cmp_ps(data, a.data, _CMP_LE_OQ); }
+>     __forceinline float operator[](size_t i) const { return data.m256_f32[i]; }
+>     __forceinline float4 v0123() const { return _mm256_castps256_ps128(data); }
+>     __forceinline float4 v4567() const { return _mm256_extractf128_ps(data, 1); }
+>     __m256 data;
+> };
+> 
+> __forceinline float8 madd(float8 a, float8 b, float8 c) { return _mm256_fmadd_ps(a.data, b.data, c.data); }
+> __forceinline float8 nmadd(float8 a, float8 b, float8 c) { return _mm256_fnmadd_ps(a.data, b.data, c.data); }
+> __forceinline float8 msub(float8 a, float8 b, float8 c) { return _mm256_fmsub_ps(a.data, b.data, c.data); }
+> __forceinline float8 nmsub(float8 a, float8 b, float8 c) { return _mm256_fnmsub_ps(a.data, b.data, c.data); }
+> __forceinline float8 min(float8 a, float8 b) { return _mm256_min_ps(a.data, b.data); }
+> __forceinline float8 max(float8 a, float8 b) { return _mm256_max_ps(a.data, b.data); }
+> __forceinline float8 sqrt(float8 a) { return _mm256_sqrt_ps(a.data); }
+> __forceinline float8 blend(float8 a, float8 b, float8 mask) { return _mm256_blendv_ps(a.data, b.data, mask.data); }
+> __forceinline int movemask(float8 a) { return _mm256_movemask_ps(a.data); }
+> template <int i0, int i1, int i2, int i3> __forceinline float8 shuffle(float8 a) {
+>     return _mm256_permute_ps(a.data, i0 + i1 * 4 + i2 * 16 + i3 * 64);
+> }
+> template <int i0, int i1, int i2, int i3> __forceinline float8 shuffle(float8 a, float8 b) {
+>     return _mm256_shuffle_ps(a.data, b.data, i0 + i1 * 4 + i2 * 16 + i3 * 64);
+> }
+> template <int i0, int i1> __forceinline float8 shuffle4(float8 a) {
+>     return _mm256_permute2f128_ps(a.data, a.data, i0 + i1 * 16);
+> }
+> template <int i0, int i1, int i2, int i3> __forceinline float8 shuffle2(float8 a) {
+>     return _mm256_castpd_ps(_mm256_permute4x64_pd(_mm256_castps_pd(a.data), i0 + i1 * 4 + i2 * 16 + i3 * 64));
+> }
+> 
+> struct int8 {
+>     __forceinline int8(__m256i a) : data(a) {}
+>     __forceinline explicit int8(int v) : data(_mm256_set1_epi32(v)) {}
+>     __forceinline explicit int8(float8 a) : data(_mm256_cvtps_epi32(a.data)) {}
+>     __forceinline int8 operator*(int8 a) const { return _mm256_mullo_epi32(data, a.data); }
+>     __forceinline void storeu(int* p) const { return _mm256_storeu_si256((__m256i*)p, data); }
+>     __m256i data;
+> };
+> __forceinline int8 unpack4lo(int8 a, int8 b) { return _mm256_permute2x128_si256(a.data, b.data, 0x20); }
+> __forceinline int8 unpack4hi(int8 a, int8 b) { return _mm256_permute2x128_si256(a.data, b.data, 0x31); }
+> 
+> struct short16 {
+>     explicit short16(short v) : data(_mm256_set1_epi16(v)) {}
+>     short16(__m256i a) : data(a) {}
+>     static __forceinline short16 loadu(const short* p) { return _mm256_loadu_si256((__m256i*)p); }
+>     __forceinline short16 operator-(short16 a) const { return _mm256_sub_epi16(data, a.data); }
+>     int8 ZeroExtendUnpackLo() const { return _mm256_unpacklo_epi16(data, _mm256_setzero_si256()); }
+>     int8 ZeroExtendUnpackHi() const { return _mm256_unpackhi_epi16(data, _mm256_setzero_si256()); }
+>     __m256i data;
+> };
+> __forceinline short16 abs(short16 a) { return _mm256_abs_epi16(a.data); }
+> template <int i> __forceinline short16 srli(short16 a) { return _mm256_srli_epi16(a.data, i); }
+> __forceinline short16 min(short16 a, short16 b) { return _mm256_min_epi16(a.data, b.data); }
+> 
+> struct short8 {
+>     short8(__m128i a) : data(a) {}
+>     short8(__int64 v0123, __int64 v4567) : data(_mm_setr_epi64x(v0123, v4567)) {}
+>     __forceinline static short8 Pack(int8 a) {
+>         auto x = float8(_mm256_castsi256_ps(_mm256_shufflehi_epi16(_mm256_shufflelo_epi16(a.data, 0xd8), 0xd8)));
+>         return _mm_castps_si128(shuffle<0, 2, 0, 2>(x.v0123(), x.v4567()).data);
+>     }
+>     __forceinline short8 operator+(short8 a) const { return _mm_add_epi16(data, a.data); }
+>     __forceinline __int64 v0123() const { return _mm_extract_epi64(data, 0); }
+>     __forceinline __int64 v4567() const { return _mm_extract_epi64(data, 1); }
+>     __m128i data;
+> };
+> 
+> //==============================================================================
+> // DynamicArray
+> //==============================================================================
+> 
+> template <typename T> struct Array {
+>     Array() : data(nullptr), size(0) {}
+>     Array(size_t size, size_t alignment = __alignof(T))
+>         : data(size ? (T*)_aligned_malloc(sizeof(T) * size, alignment) : nullptr), size(size) {}
+>     Array(const Array& a) : Array(a.size) {
+>         for (size_t i = 0; i < size; i++) data[i] = a.data[i];
+>     }
+>     Array(Array&& a) : data(a.data), size(a.size) { a.data = nullptr; }
+>     ~Array() {
+>         if (data) _aligned_free(data);
+>     }
+>     explicit operator bool() const { return data != nullptr; }
+>     operator T*() const { return data; }
+>     T* operator+(size_t i) const {
+>         assert(i < size);
+>         return data + i;
+>     }
+>     Array& operator=(Array a) {
+>         auto temp = data;
+>         data = a.data;
+>         size = a.size;
+>         a.data = temp;
+>         return *this;
+>     }
+>     T& operator[](size_t i) {
+>         assert(i < size);
+>         return data[i];
+>     }
+>     T operator[](size_t i) const {
+>         assert(i < size);
+>         return data[i];
+>     }
+>     T* begin() { return data; }
+>     T* end() { return data + size; }
+>     const T* begin() const { return data; }
+>     const T* end() const { return data + size; }
+>     T* data;
+>     size_t size;
+> };
+> 
+> // TODO: delete me and add an initializer iterator for Array.
+> template <typename T> struct DynamicArray {
+>     DynamicArray() : data(nullptr), size(0), capacity(0) {}
+>     DynamicArray(size_t capacity, size_t size = 0, size_t alignment = __alignof(T))
+>         : data(capacity ? (T*)_aligned_malloc(sizeof(T) * capacity, alignment) : nullptr),
+>           size(size),
+>           capacity(capacity) {
+>         assert(size <= capacity);
+>     }
+>     DynamicArray(const DynamicArray& a) : DynamicArray(a.size) {
+>         for (size_t i = 0; i < size; i++) data[i] = a.data[i];
+>     }
+>     DynamicArray(DynamicArray&& a) : data(a.data), size(a.size), capacity(capacity) { a.data = nullptr; }
+>     ~DynamicArray() {
+>         if (data) _aligned_free(data);
+>     }
+>     explicit operator bool() const { return data != nullptr; }
+>     DynamicArray& operator=(DynamicArray a) {
+>         auto temp = data;
+>         data = a.data;
+>         size = a.size;
+>         capacity = a.capacity;
+>         a.data = temp;
+>         return *this;
+>     }
+>     T& operator[](size_t i) {
+>         assert(i < size);
+>         return data[i];
+>     }
+>     T operator[](size_t i) const {
+>         assert(i < size);
+>         return data[i];
+>     }
+>     void Resize(size_t new_size) {
+>         assert(new_size <= capacity);
+>         size = new_size;
+>     }
+>     template <typename... Args> void Push(const Args&... args) {
+>         assert(size < capacity);
+>         data[size++] = T(args...);
+>     }
+>     T* begin() { return data; }
+>     T* end() { return data + size; }
+>     const T* begin() const { return data; }
+>     const T* end() const { return data + size; }
+>     T* data;
+>     size_t size, capacity;
+> };
+> 
+> //==============================================================================
+> // Vector Types
+> //==============================================================================
+> 
+> struct Vector {
+>     Vector() = default;
+>     Vector(float x, float y) : x(x), y(y) {}
+>     Vector operator+(const Vector& a) const { return Vector(x + a.x, y + a.y); }
+>     Vector operator-(const Vector& a) const { return Vector(x - a.x, y - a.y); }
+>     Vector operator*(float a) const { return Vector(x * a, y * a); }
+>     float x, y;
+> };
+> 
+> struct Point {
+>     Point() = default;
+>     Point(float x, float y) : x(x), y(y) {}
+>     explicit Point(const Vector& a) : x(a.x), y(a.y) {}
+>     Vector operator-(const Point& a) const { return Vector(x - a.x, y - a.y); }
+>     float x, y;
+> };
+> 
+> struct __declspec(align(8)) Matrix2x3 {
+>     Matrix2x3() = default;
+>     Matrix2x3(float x_x, float y_x, float w_x, float x_y, float y_y, float w_y)
+>         : x(x_x, x_y), y(y_x, y_y), w(w_x, w_y) {}
+>     Matrix2x3(const Vector& x, const Vector& y, const Point& w) : x(x), y(y), w(w) {}
+>     Vector operator*(const Vector& a) const { return Vector(x.x * a.x + y.x * a.y, x.y * a.x + y.y * a.y); };
+>     Point operator*(const Point& a) const { return Point(x.x * a.x + y.x * a.y + w.x, x.y * a.x + y.y * a.y + w.y); };
+>     Matrix2x3 operator*(const Matrix2x3& a) const { return Matrix2x3((*this) * a.x, (*this) * a.y, (*this) * a.w); }
+>     Vector x, y;
+>     Point w;
+> };
+> 
+> static inline Matrix2x3 invert(const Matrix2x3& a) {
+>     auto scale = 1.0f / (a.x.x * a.y.y - a.x.y * a.y.x);
+>     auto x = Vector(a.y.y, -a.x.y) * scale;
+>     auto y = Vector(-a.y.x, a.x.x) * scale;
+>     auto w = Point(x * -a.w.x - y * a.w.y);
+>     return Matrix2x3(x, y, w);
+> }
+> 
+> //==============================================================================
+> // Basic Types
+> //==============================================================================
+> 
+> struct short2 {
+>     short x, y;
+> };
+> 
+> struct __declspec(align(8)) Segment {
+>     Segment() = default;
+>     Segment(short2 vert, short2 knot) : vert(vert), knot(knot) {}
+> 
+>     short2 vert;
+>     short2 knot;
+> };
+> 
+> //==============================================================================
+> // Packed Types
+> //==============================================================================
+> 
+> struct Box {
+>     Box() = default;
+>     explicit Box(float4 data) : data(data) {}
+>     Box(float lower_x, float lower_y, float upper_x, float upper_y) : data(-lower_x, -lower_y, upper_x, upper_y) {}
+>     Box(const Point& a) : data(-a.x, -a.y, a.x, a.y) {}
+>     Box operator+(const Box& a) const { return Box(data + a.data); }
+>     Box operator&(const Box& a) const { return Box(min(data, a.data)); }
+>     Box operator|(const Box& a) const { return Box(max(data, a.data)); }
+>     Box& operator|=(const Box& a) {
+>         data = max(data, a.data);
+>         return *this;
+>     }
+>     static Box Empty() { return Box(float4(-floatInfinity())); }
+>     float4 data; // -lower_x, -lower_y, upper_x, upper_y
+> };
+> 
+> struct Shape {
+>     explicit Shape(float8 p0v1p2v3) : p0v1p2v3(p0v1p2v3) {}
+>     Shape(float x0, float x1, float x2, float x3, float y0, float y1)
+>         : p0v1p2v3(x0, y0, x1 - x0, y1 - y0, x2, y1, x3 - x2, y0 - y1) {}
+>     Shape(const Point& p0, const Vector& v1, const Vector& v2)
+>         : p0v1p2v3(p0.x, p0.y, v1.x, v1.y, p0.x, p0.y, v2.x, v2.y) {}
+>     bool IsTrapazoid() const { return p0v1p2v3[1] != p0v1p2v3[5]; }
+>     bool IsBox4NodeRef() const { return (((const unsigned*)this)[7] >> 23) == 0; } // sign and exponent will be 0 only for ref?? TODO: make me NAN instead
+>     Box Bound() const {
+>         auto p1__p3__ = p0v1p2v3 + shuffle<2, 3, 2, 3>(p0v1p2v3);
+>         auto temp0 = -min(p0v1p2v3, p1__p3__);
+>         auto temp1 = max(p0v1p2v3, p1__p3__);
+>         auto lower = max(temp0.v0123(), temp0.v4567());
+>         auto upper = max(temp1.v0123(), temp1.v4567());
+>         return Box(shuffle<0, 1, 0, 1>(lower, upper));
+>     }
+>     float8 p0v1p2v3;
+> };
+> 
+> struct __declspec(align(32)) Box4NodeRef {
+>     Matrix2x3 objectFromParent;
+>     int meshIndex; // Relative from the current mesh.
+>     unsigned nodeIndex; // Relative to the base shape of the current mesh.
+> };
+> 
+> struct __declspec(align(32)) Box4Node {
+>     const Box4Node* Child(size_t i) const { return (const Box4Node*)((const char*)this + data[1 + i]); }
+>     Box4Node* Child(size_t i) { return (Box4Node*)((char*)this + data[1 + i]); }
+>     const Shape* ShapesAt(const Shape* shapes, size_t i) const { return (const Shape*)((const char*)shapes + data[i]); }
+>     const Box4NodeRef* Box4NodeRefAt(const Shape* shapes, size_t i) const { return (const Box4NodeRef*)((const char*)shapes + data[i]); }
+>     unsigned IsLeaf(size_t i) const { return leafMask & (1u << i); }
+>     Box Bound(size_t i) const { return Box(float4(-min_x[i], -min_y[i], max_x[i], max_y[i])); }
+> 
+>     Box Bound() const { return Bound(0) | Bound(1) | Bound(2) | Bound(3); }
+> 
+>     Box Bound(const Matrix2x3& m) const {
+>         Box box = Box::Empty();
+>         for (size_t i = 0; i < 4; i++) {
+>             if (data[i] == data[i + 1]) continue;
+>             box |= Box(m * Point(min_x[i], min_y[i]));
+>             box |= Box(m * Point(min_x[i], max_y[i]));
+>             box |= Box(m * Point(max_x[i], min_y[i]));
+>             box |= Box(m * Point(max_x[i], max_y[i]));
+>         }
+>         return box;
+>     }
+> 
+>     float min_x[4], min_y[4];
+>     float max_x[4], max_y[4];
+>     unsigned data[5];
+>     unsigned char leafMask;
+>     char PADDING[10];
+> };
+> 
+> struct Mesh {
+>     const Shape* shapes;
+>     const Box4Node* nodes;
+> };
+Only in thorax: thorax_bridge.cpp
+Only in thorax: thorax_bridge.h
+diff -r thorax/thorax_truetype.cpp thorax_truetype-master/thorax_truetype.cpp
+18,19d17
+< // This file was modified from it's original form by Apollo I. Ellis (i think, can't remember :\)
+< 

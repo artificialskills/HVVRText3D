@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="modelviewer.cpp" />
+    <ClCompile Include="..\..\..\libraries\hvvr\shared\thorax\thorax_bridge.cpp">
+      <Filter>thorax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libraries\hvvr\shared\thorax\thorax_truetype.cpp">
+      <Filter>thorax</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libraries\hvvr\shared\thorax\renderer\drawcontext.cpp">
+      <Filter>thorax\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libraries\hvvr\shared\thorax\renderer\grid_builders.cpp">
+      <Filter>thorax\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libraries\hvvr\shared\thorax\renderer\bvh.cpp">
+      <Filter>thorax\renderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="thorax">
+      <UniqueIdentifier>{d535ef51-6050-4106-9336-fbdfb1b85870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thorax\renderer">
+      <UniqueIdentifier>{15968724-a8cc-4bca-a3e6-01f23243c1e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\libraries\hvvr\shared\thorax\grid_types.h">
+      <Filter>thorax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\hvvr\shared\thorax\grids.h">
+      <Filter>thorax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\hvvr\shared\thorax\thorax_bridge.h">
+      <Filter>thorax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\hvvr\shared\thorax\thorax_truetype.h">
+      <Filter>thorax</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\hvvr\shared\thorax\renderer\drawcontext.h">
+      <Filter>thorax\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\hvvr\shared\thorax\renderer\types.h">
+      <Filter>thorax\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libraries\hvvr\raycaster\grid_buffers.h" />
+    <ClInclude Include="..\..\..\libraries\hvvr\raycaster\grid_sampler.h" />
+    <ClInclude Include="..\..\..\libraries\hvvr\shared\thorax\renderer\build.h">
+      <Filter>thorax\renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\..\libraries\hvvr\raycaster\grid_buffers.cu" />
+  </ItemGroup>
+</Project>
