@@ -1,4 +1,4 @@
-HVVR_Text3D is based code and implementations of two individual projects:
+HVVRText3D is based code and implementations of two individual projects:
 1. HVVR (Hierarchical Visibility for Virtual Reality),Facebook, Inc.
 2. Thorax truetype font library, Warren Hunt 
 
