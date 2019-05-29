@@ -16,6 +16,10 @@ Additionally my original code is licensed under the BSD license.
 The original projects above retain all copyright notices.
 Their respective licenses and notices are repeated below.
 
+*****************************************************************************
+HVVR (Hierarchical Visibility for Virtual Reality)
+*****************************************************************************
+
 /*
 
  *Copyright (c) 2017-present, Facebook, Inc.
@@ -26,6 +30,10 @@ Their respective licenses and notices are repeated below.
  *of patent rights can be found in the PATENTS file in the same directory.
 
 */
+
+*****************************************************************************
+Thorax truetype
+*****************************************************************************
  
 //===- thorax_truetype.cpp -------------------------------------*- C++ --*-===//
 
@@ -44,6 +52,7 @@ Their respective licenses and notices are repeated below.
 //    http://www.apache.org/licenses/LICENSE-2.0
 
 //
+
 // Unless required by applicable law or agreed to in writing, software
 
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -65,9 +74,9 @@ LICENSES
 
 
 
-******************************************************************************
+*****************************************************************************
 HVVR (Hierarchical Visibility for Virtual Reality)
-******************************************************************************
+*****************************************************************************
 
 
 BSD License
@@ -102,9 +111,9 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-******************************************************************************
+*****************************************************************************
 Thorax truetype
-******************************************************************************
+*****************************************************************************
 
 
    Apache License
