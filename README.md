@@ -14,21 +14,35 @@ libraries/hvvr/raycaster/grid_sampler.h
 The individual projects that are integrated, HVVR and Thorax, have their 
 respective readme.md text inlined below.
 
-The HVVR project was forked by myself in July 2018, and the fork was 
-converted into this upload. Do not expect it to adhere to any expectations
+The HVVR project was forked by myself, Apollo Ellis, in July 2018, and the fork 
+was converted into this upload. Do not expect it to adhere to any expectations
 of, or match, HVVR proper. Of course licensing has been preserved. See 
 NOTICE.md and LICENSE in the root directory of this project.
 
-Thorax was downloaded from github by myself in July 2018. Of course licensing has 
-been preserved. See NOTICE.md and LICENSE2.
+Thorax was downloaded from github by myself, Apollo Ellis, in July 2018. Of course
+licensing has been preserved. See NOTICE.md and LICENSE2.
 
 My own code leveraging HVVR and Thorax e.g. thorax_bridge,
 grid, grid_types, grid_builders, and grid_sampler, you will find have been
 licensed under BSD Three Clause, the same license as HVVR, which you can
 again find in LICENSE.
 
-Most of the usage instructions for HVVR apply to HVVRText3D with the exception,
-you should set textviewer as the startup project instead of modelviewer.
+Most of the usage instructions for HVVR apply to HVVRText3D with a few
+exceptions.
+
+You should set textviewer as the startup project instead of modelviewer.
+
+Like HVVR, and many open source renderers we do not provide default scenes
+in our source distribution. As mentioned below in the HVVR section, 
+scene files can be exported as FBX from your favorite modeling tool, 
+and converted via the HVVR modelconvert project into a file format usable by HVVR
+i.e. a .bin file.
+
+We suggest utilizing the official HVVR modelconvert project in the 
+offical HVVR source code distribution on github, as we have mostly disabled
+modelconvert here. Using the official HVVR modelconvert project is simple, and 
+mainly requires the fbx sdk. The .bin scene files produced can be used 
+with HVVRText3D as is.
 
 # Thorax Truetype
 
