@@ -27,7 +27,8 @@ grid, grid_types, grid_builders, and grid_sampler, you will find have been
 licensed under BSD Three Clause, the same license as HVVR, which you can
 again find in LICENSE.
 
-Enjoy!
+Most of the usage instructions for HVVR apply to HVVRText3D with the exception,
+you should set textviewer as the startup project instead of modelviewer.
 
 # Thorax Truetype
 
