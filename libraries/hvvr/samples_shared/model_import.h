@@ -16,7 +16,7 @@
 
 #include <vector>
 
-#define MODEL_IMPORT_ENABLE_FBX 1
+#define MODEL_IMPORT_ENABLE_FBX 0
 
 namespace hvvr {
 class Raycaster;
@@ -61,7 +61,7 @@ bool load(const char* path, Model& model);
 bool loadBin(const char* path, Model& model);
 bool saveBin(const char* path, const Model& model);
 
-#if 0
+#if MODEL_IMPORT_ENABLE_FBX
 bool loadFbx(const char* path, Model& model);
 #endif
 

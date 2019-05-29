@@ -31,7 +31,7 @@ bool load(const char* path, Model& model) {
         return loadBin(path, model);
     }
 
-#if 0
+#if MODEL_IMPORT_ENABLE_FBX
     // attempt to load it with the FBX SDK
     return loadFbx(path, model);
 #else

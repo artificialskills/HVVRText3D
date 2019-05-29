@@ -9,7 +9,7 @@
 
 #include "model_import.h"
 
-#if 0
+#if MODEL_IMPORT_ENABLE_FBX
 
 #include "bvh.h"
 #include "constants_math.h"
