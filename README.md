@@ -1,3 +1,61 @@
+#HVVRText3D
+
+HVVRText3D integrates fast high quality analytic text rendering into HVVR,
+leveraging capabilities in Thorax True-Type.
+
+It is a purely analytic anti-aliasing technique, which computes the 
+coverage of vector primitives, found in True-Type fonts (pre-processed 
+by Thorax), over pixel footprints directly.
+
+The techniques we employ in the math make the computation extremely rapid.
+The crux of the novel implementation is in:
+libraries/hvvr/raycaster/grid_sampler.h
+
+The individual projects that are integrated, HVVR and Thorax, have their 
+respective readme.md text inlined below.
+
+The HVVR project was forked by myself in July 2018, and the fork was 
+converted into this upload. Do not expect it to adhere to any expectations
+of, or match, HVVR proper. Of course licensing has been preserved. See 
+NOTICE.md and LICENSE in the root directory of this project.
+
+Thorax was downloaded from github by myself in July 2018. Of course licensing has 
+been preserved. See NOTICE.md and LICENSE2.
+
+My own code leveraging HVVR and Thorax e.g. thorax_bridge,
+grid, grid_types, grid_builders, and grid_sampler, you will find have been
+licensed under BSD Three Clause, the same license as HVVR, which you can
+again find in LICENSE.
+
+Enjoy!
+
+#Thorax Truetype
+
+Thorax Truetype is a library for loading and rendering TrueType fonts.  This
+project grew out of a pedagogical exercise to have an easy to understand
+TrueType loader.  My desire to do so came from stb_truetype being difficult
+to understand due to a lack of C++ features or type punning (the address
+computations required to index into the truetype tables are pretty
+incomprehensible as inline C code) and the size of the opentype loader.
+
+The loader consists of two files:
+  thorax_truetype.h
+  thorax_truetype.cpp
+
+In addition to the font loader, this project contains a font rasterizer in the
+renderer folder.  The rasterizer uses a novel coverage algorithm and is capable
+of generated nicely anti-aliased renderings.
+
+The files in the renderer:
+  build.h         : interface for managing text scenes
+  bvh.cpp         : implementation of bounding volume hierarchy builders
+  drawcontext.h   : context interface for drawing text to a bitmap
+  drawcontext.cpp : context implementation for drawing text to a bitmap
+  types.h         : a variety of helper datatypes
+
+A more detailed description of the rasterizer will come later.
+
+
 # HVVR
 HVVR (Hierarchical Visibility for Virtual Reality) is an optimized software raycaster. It implements a hybrid CPU/GPU raycaster, suited for real-time rendering of effects such as lens distortion.
 
