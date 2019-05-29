@@ -1,4 +1,4 @@
-#HVVRText3D
+# HVVRText3D
 
 HVVRText3D integrates fast high quality analytic text rendering into HVVR,
 leveraging capabilities in Thorax True-Type.
@@ -29,7 +29,7 @@ again find in LICENSE.
 
 Enjoy!
 
-#Thorax Truetype
+# Thorax Truetype
 
 Thorax Truetype is a library for loading and rendering TrueType fonts.  This
 project grew out of a pedagogical exercise to have an easy to understand
