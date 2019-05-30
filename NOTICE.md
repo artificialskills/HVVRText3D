@@ -16,6 +16,11 @@ Additionally my original code is licensed under the BSD license.
 The original projects above retain all copyright notices.
 Their respective licenses and notices are repeated below.
 
+Note, HVVR has recently modified their licensing to be pure BSD removing
+their permissive patent statment, we have not updated each file to reflect
+this, so the original copyright statements remain throughout the HVVR code base.
+See https://github.com/facebookresearch/HVVR for the updated notices.
+
 *****************************************************************************
 HVVR (Hierarchical Visibility for Virtual Reality)
 *****************************************************************************
