@@ -343,8 +343,8 @@ namespace hvvr {
 	CUDA_DEVICE float sample_grid_sop(TextGridGPU textGrid, vector2 uv, vector2 dUVdX, vector2 dUVdY) {
 		float coverage = 0.0f;
 		//uv.y = 1 - uv.y;
-		dUVdX.y *= 1.2;
-		dUVdY.y *= 1.2;
+		dUVdX *= 1.2;
+		dUVdY *= 1.2;
 		matrix3x3 R = RQDecomp(matrix3x3(vector3(dUVdX.x, dUVdX.y, 0), vector3(dUVdY.x, dUVdY.y, 0),vector3(0, 0, 1)));
 		float toS = 1.0f / (textGrid.highest_x - textGrid.lowest_x);
 		float toT = 1.0f / (textGrid.highest_y - textGrid.lowest_y);
